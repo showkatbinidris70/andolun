@@ -258,6 +258,7 @@
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,
   loop: true,
+  speed: 5000,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
