@@ -97,14 +97,15 @@ body {
 .scrolling-news .title {
   font-size: 24px;
   font-family: "SolaimanLipi";
-  font-weight: bold;
+  font-weight: 400;
   background-color: var(--red);
   color: var(--white);
 }
 .scrolling-news .marq .marque-text {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "SolaimanLipi";
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 1.8;
 }
 /* scrolling-news end */
 
@@ -172,9 +173,8 @@ body {
 
 #bg-video {
   min-width: 100%;
-  min-height: 100vh;
+  height: 80vh;
   max-width: 100%;
-  max-height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -602,8 +602,9 @@ body {
     font-size: 20px;
   }
   .scrolling-news .marq .marque-text {
-    font-size: 20px;
+    font-size: 18px;
   }
+
   /* scrolling-news end */
   /* hero section  */
   .hero-section .our-demands {
@@ -617,7 +618,7 @@ body {
     font-size: 20px;
   }
   .scrolling-news .marq .marque-text {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* scrolling-news end */
   /* hero section  */
@@ -632,7 +633,7 @@ body {
     font-size: 18px;
   }
   .scrolling-news .marq .marque-text {
-    font-size: 18px;
+    font-size: 14px;
   }
   /* scrolling-news end */
   /* hero section  */
