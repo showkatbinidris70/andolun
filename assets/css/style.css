@@ -39,15 +39,39 @@ body {
   position: relative;
   width: 100%;
 }
-.hero-section .bottom-title {
+.hero-section .bottom-title .pic-caption {
   background-color: #f5f3f489;
+  clip-path: polygon(0% 0%, 95% 0, 100% 100%, 100% 100%, 0% 100%);
+  height: 30px;
+  width: 75%;
 }
-.hero-section .bottom-title p {
+.hero-section .bottom-title .pic-source {
+  background-color: #f5f3f489;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 10% 100%);
+  height: 30px;
+  width: 25%;
+}
+.hero-section .bottom-title .pic-caption p {
   color: var(--black);
-  font-size: 20px;
+  font-size: 14px;
   font-family: "SolaimanLipi";
   font-weight: 400;
   line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.hero-section .bottom-title .pic-source p {
+  color: var(--black);
+  font-size: 12px;
+  font-family: "SolaimanLipi";
+  font-weight: 400;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .hero-section .image-wrapper img {
   position: absolute;
@@ -1979,6 +2003,14 @@ body {
   .hero-section .bottom-title p {
     font-size: 16px;
   }
+  .hero-section .bottom-title .pic-caption {
+    clip-path: polygon(0% 0%, 90% 0, 100% 100%, 100% 100%, 0% 100%);
+    width: 60%;
+  }
+  .hero-section .bottom-title .pic-source {
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 10% 100%);
+    width: 40%;
+  }
   .our-heros .image-overlay-bottom-to-up-text h5 {
     font-size: 12px;
     font-weight: 400;
@@ -2011,6 +2043,14 @@ body {
   .our-heros .image-overlay-bottom-to-up-text h5 {
     font-size: 14px;
     font-weight: 400;
+  }
+  .hero-section .bottom-title .pic-caption {
+    clip-path: polygon(0% 0%, 95% 0, 100% 100%, 100% 100%, 0% 100%);
+    width: 70%;
+  }
+  .hero-section .bottom-title .pic-source {
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 10% 100%);
+    width: 30%;
   }
   .our-heros .image-overlay-bottom-to-up-text h6 {
     font-size: 12px;
@@ -2049,6 +2089,14 @@ body {
   .our-heros .image-overlay-bottom-to-up-text h5 {
     font-size: 14px;
     font-weight: 400;
+  }
+  .hero-section .bottom-title .pic-caption {
+    clip-path: polygon(0% 0%, 90% 0, 100% 100%, 100% 100%, 0% 100%);
+    width: 60%;
+  }
+  .hero-section .bottom-title .pic-source {
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 10% 100%);
+    width: 40%;
   }
   .our-heros .image-overlay-bottom-to-up-text h6 {
     font-size: 12px;
@@ -2100,6 +2148,15 @@ body {
   .our-heros .image-overlay-bottom-to-up-text h6 {
     font-size: 12px;
     font-weight: 300;
+  }
+
+  .hero-section .bottom-title .pic-caption {
+    clip-path: polygon(0% 0%, 90% 0, 100% 100%, 100% 100%, 0% 100%);
+    width: 50%;
+  }
+  .hero-section .bottom-title .pic-source {
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 10% 100%);
+    width: 50%;
   }
   .hundred-global-collection .angled-section::before {
     left: 0%;
