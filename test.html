@@ -1,116 +1,113 @@
 <!DOCTYPE html>
-<html>
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<html lang="en">
 
-    body {
-        margin: 0;
-        font-family: Arial;
-    }
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    .header {
-        text-align: center;
-        padding: 32px;
-    }
 
-    .photos-row {
-        display: -ms-flexbox;
-        /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap;
-        /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    /* Create four equal columns that sits next to each other */
-    .photos-column {
-        -ms-flex: 25%;
-        /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-    }
-
-    .photos-column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-    }
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-        .photos-column {
-            -ms-flex: 50%;
-            flex: 50%;
-            max-width: 50%;
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
-    }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .photos-column {
-            -ms-flex: 100%;
-            flex: 100%;
-            max-width: 100%;
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
         }
-    }
-</style>
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: calc((100% - 30px) / 2) !important;
+
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
 
 <body>
-<section>
-    <div class="container">
-        <div class="row">
-            
+    <div class="card h-100 w-100 border-0 bg-transparent py-2">
+        <div class="head-of-faculty position-lg-relative">
+            <div class="text-center position-absolute w-100">
+                <img src="./assets/img/andolon.webp" class="img-fluid w-25 rounded-circle zoomIn" />
+            </div>
+            <div class=""
+                style="margin-top: 7.5rem; padding-top: 10rem; padding-bottom: 1rem; background-color: #0B9D9D;">
+                <h2 class="pt-5 text-center" style="color: #F0E70A;">Dr. Md. Masum </h2>
+                <h2 class="text-center" style="color: #F0E70A;">Dean</h2>
+                <p class="px-3 fw-bold fs-5 text-white text-center">Faculty of Textile Management and
+                    Business
+                </p>
+                <p class="px-1 px-md-3 fw-bold fs-5 text-white text-center">
+                    Email: dean.ftmbs@butex.edu.bd</p>
+                <div class="text-center pt-3"><a href="/" class="text-white p-2  rounded"
+                        style="box-shadow: 2px 2px 0px 1px #0B9D9D; background-color: #c84545; ">Read
+                        More</a></div>
+            </div>
         </div>
     </div>
-</section>
-    <!-- Header -->
-    <div class="header">
-        <h1>Responsive Image Grid</h1>
-        <p>Resize the browser window to see the responsive effect.</p>
-    </div>
-
-    <!-- Photo Grid -->
-    <div class="photos-row">
-        <div class="photos-column">
-            <img src="./assets/img/sot/wedding.jpg" style="width:100%">
-            <img src="./assets/img/sot/rocks.jpg" style="width:100%">
-            <img src="./assets/img/sot/falls2.jpg" style="width:100%">
-            <img src="./assets/img/sot/paris.jpg" style="width:100%">
-            <img src="./assets/img/sot/nature.jpg" style="width:100%">
-            <img src="./assets/img/sot/mist.jpg" style="width:100%">
-            <img src="./assets/img/sot/paris.jpg" style="width:100%">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
         </div>
-        <div class="photos-column">
-            <img src="./assets/img/sot/underwater.jpg" style="width:100%">
-            <img src="./assets/img/sot/ocean.jpg" style="width:100%">
-            <img src="./assets/img/sot/wedding.jpg" style="width:100%">
-            <img src="./assets/img/sot/mountainskies.jpg" style="width:100%">
-            <img src="./assets/img/sot/rocks.jpg" style="width:100%">
-            <img src="./assets/img/sot/underwater.jpg" style="width:100%">
-        </div>
-        <div class="photos-column">
-            <img src="./assets/img/sot/wedding.jpg" style="width:100%">
-            <img src="./assets/img/sot/rocks.jpg" style="width:100%">
-            <img src="./assets/img/sot/falls2.jpg" style="width:100%">
-            <img src="./assets/img/sot/paris.jpg" style="width:100%">
-            <img src="./assets/img/sot/nature.jpg" style="width:100%">
-            <img src="./assets/img/sot/mist.jpg" style="width:100%">
-            <img src="./assets/img/sot/paris.jpg" style="width:100%">
-        </div>
-        <div class="photos-column">
-            <img src="./assets/img/sot/underwater.jpg" style="width:100%">
-            <img src="./assets/img/sot/ocean.jpg" style="width:100%">
-            <img src="./assets/img/sot/wedding.jpg" style="width:100%">
-            <img src="./assets/img/sot/mountainskies.jpg" style="width:100%">
-            <img src="./assets/img/sot/rocks.jpg" style="width:100%">
-            <img src="./assets/img/sot/underwater.jpg" style="width:100%">
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

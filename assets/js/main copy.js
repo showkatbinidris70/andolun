@@ -6,8 +6,6 @@
  * License: https://bootstrapmade.com/license/
  */
 
-// Initialize Swiper
-
 (function () {
   "use strict";
 
@@ -252,119 +250,29 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
-
-  var historySwiperSlider = new Swiper(".historySwiperSlider", {
-    direction: "vertical",
-    mousewheel: true,
-    // loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  var showkat = new Swiper(".shamonnoyk", {
-    slidesPerView: 5,
-    loop: true,
-    spaceBetween: 30,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-
-      575: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      1400: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-    },
-  });
-
-  var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    loop: true,
-    speed: 5000,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
-
-  var shahidListSwiper = new Swiper(".shahidListSwiper", {
-    cssMode: true,
-    loop: true,
-    speed: 5000,
-    slidesPerView: 6,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
 })();
 
 // ---------------------------------------------------------------------
+// Initialize Swiper
+
+// var swiper = new Swiper(".mySwiper", {
+//   cssMode: true,
+//   loop: true,
+//   speed: 5000,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+// });
 
 //css scroll animation start
 function reveal() {
@@ -475,3 +383,15 @@ $(document).ready(function () {
   });
 });
 // important links slider end
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

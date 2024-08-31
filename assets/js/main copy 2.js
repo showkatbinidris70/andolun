@@ -261,66 +261,21 @@
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
   });
 
-  var showkat = new Swiper(".shamonnoyk", {
-    slidesPerView: 5,
-    loop: true,
-    spaceBetween: 30,
-
+  var showkat = new Swiper(".showkat", {
+    slidesPerView: 8,
+    grid: {
+      rows: 2,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-
-      575: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
-      1400: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-        grid: {
-          rows: 2,
-        },
-      },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
