@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "SolaimanLipi";
+  src: url("../fonts/SolaimanLipi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   padding: 0;
@@ -102,7 +108,7 @@ body {
 }
 .hero-section .our-demands .card-text {
   font-size: 18px;
-  font-family: "SolaimanLipi";
+  font-family: "SolaimanLipi", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   overflow: hidden;
@@ -118,6 +124,22 @@ body {
 }
 
 /* header end */
+
+/* foloating btn start */
+.floating-btn {
+  z-index: 999;
+  position: fixed;
+  right: 2rem;
+  top: 48%;
+}
+
+.floating-btn .our-visitors {
+  background-color: #bd1616;
+  font-family: "SolaimanLipi", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+/* foloating btn end */
 
 /* scrolling-news start */
 .scrolling-news .title {
