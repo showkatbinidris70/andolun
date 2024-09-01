@@ -630,6 +630,38 @@ body {
 }
 /* events end */
 
+/* upcoming-events start */
+.upcoming-events .upcoming-events-content {
+  width: 100%;
+  height: 100%;
+  background-color: #b53f1f6f;
+  background-image: url("../img/bg.da5f502892f862ed1de2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.upcoming-events .upcoming-events-content .countdown-circle {
+  height: 100px;
+  width: 100px;
+  border: 3px solid red;
+  border-radius: 50%;
+  padding-top: 10px;
+  background-color: #8e1e1e7f;
+  color: white;
+}
+
+.upcoming-events .upcoming-events-content .countdown-circle span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.upcoming-events .upcoming-events-content .countdown-circle .label {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* upcoming-events end */
 /* latest-news start */
 .latest-news {
   width: 100%;
