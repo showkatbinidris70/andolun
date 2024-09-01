@@ -35,49 +35,63 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <title>বাংলাদেশ 2.0</title>
+  <title>বাংলাদেশ ২.০</title>
 </head>
 
 <body class="index-page">
 
-  <section class="top-header" style="background-color: #bd1616;">
+  <section class="top-header">
     <div class="container">
-      <div class="row py-1">
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-2 mb-xl-0">
-          <div class="text-center">
-            <a href="#" type="button" class="bg-success text-white p-2 rounded">
-              Registration for martyr
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-2 mb-xl-0">
-          <div class="text-center">
-            <a href="#" type="button" class="bg-success text-white p-2 rounded">
-              Registration for Injury
-            </a>
-          </div>
+      <div class="row">
+        <div class="d-flex gap-3 justify-content-end align-items-center ">
+          <p class="message ">১ আগস্ট থেকে ৫ আগস্ট পর্যন্ত :: </p>
+          <a href="#" type="button" class="cta-btn p-2 rounded">
+            শহীদদের তথ্য জানান
+          </a>
+          <a href="#" type="button" class="cta-btn p-2 rounded">
+            আহতদের তথ্য জানান
+          </a>
+          <a href="#" type="button" class="cta-btn p-2 rounded">
+            নিখোঁজদের তথ্য জানান
+          </a>
         </div>
       </div>
+      <!-- <div class="row py-1 d-none">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-2 mb-xl-0">
+          <div class="text-center">
+            <a href="#" type="button" class="bg-success text-white p-2 rounded">
+              শহীদদের তালিকা যুক্ত করুন
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-2 mb-xl-0">
+          <div class="text-center">
+            <a href="#" type="button" class="bg-success text-white p-2 rounded">
+              আহতদের তালিকা যুক্ত করুন
+            </a>
+          </div>
+        </div>
+      </div> -->
     </div>
   </section>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">বাংলাদেশ 2.0</h1>
+        <h1 class="sitename">বাংলাদেশ ২.০</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#about">হোম</a></li>
+          <li><a href="#services">পটভূমি</a></li>
+          <li><a href="#services">সমন্বয়ক</a></li>
+          <li><a href="#about">কর্মসূচি</a></li>
+          <li><a href="#about">যোগাযোগ</a></li>
+          <li class="dropdown d-none"><a href="#"><span>Dropdown</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
@@ -95,7 +109,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="d-none"><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -108,12 +122,12 @@
           class="fw-bold fs-5">২২২৫</span></p>
     </div>
   </section>
-  
+
   <section class="scrolling-news">
     <div class="container">
       <div class="row">
         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-2 pe-0">
-          <div class="title text-center px-1">Update News</div>
+          <div class="title text-center px-1">সর্বশেষ খবর</div>
         </div>
         <div class="col-7 col-sm-8 col-md-9 col-lg-9 col-xl-9 col-xxl-10 ps-0">
           <marquee class="marq" bgcolor="green" direction="left" loop="">
@@ -130,6 +144,103 @@
   </section>
 
   <section class="hero-section mb-5" style="margin-top: 40px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-7 col-lg-7 col-xl-12 col-xxl-12 mb-3 mb-md-0">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
+                <img src="./assets/img/andolon.webp" class="img-fluid" />
+                <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+                  <div class="d-flex justify-content-between gap-1 align-items-center">
+                    <div class="pic-caption px-3 py-2">
+                      <p class="text-start">লংমার্চ টু ঢাকা</p>
+                    </div>
+                    <div class="pic-source px-4 py-2">
+                      <p>ছবি প্রথম আলো থেকে </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute px-5 text-white top-50">
+                  <h2 class="text-white ">১ আগস্ট সমাবেশের চিত্র</h2>
+                </div>
+              </div>
+              <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
+                <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
+                <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+                  <div class="d-flex justify-content-between gap-1 align-items-center">
+                    <div class="pic-caption px-3 py-2">
+                      <p class="text-start">লংমার্চ টু ঢাকা</p>
+                    </div>
+                    <div class="pic-source px-4 py-2">
+                      <p>ছবি প্রথম আলো থেকে </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute px-5 text-white top-50">
+                  <h2 class="text-white ">৪ আগস্ট সমাবেশের চিত্র</h2>
+                </div>
+              </div>
+              <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
+                <img src="./assets/img/andolon.webp" class="img-fluid" />
+                <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+                  <div class="d-flex justify-content-between gap-1 align-items-center">
+                    <div class="pic-caption px-3 py-2">
+                      <p class="text-start">লংমার্চ টু ঢাকা</p>
+                    </div>
+                    <div class="pic-source px-4 py-2">
+                      <p>ছবি প্রথম আলো থেকে </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute px-5 text-white top-50">
+                  <h2 class="text-white ">৫ আগস্ট সমাবেশের চিত্র</h2>
+                </div>
+              </div>
+              <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
+                <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
+                <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+                  <div class="d-flex justify-content-between gap-1 align-items-center">
+                    <div class="pic-caption px-4 py-2">
+                      <p class="text-start">লংমার্চ টু ঢাকা</p>
+                    </div>
+                    <div class="pic-source px-3 py-2">
+                      <p>ছবি প্রথম আলো থেকে </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute px-5 text-white top-50">
+                  <h2 class="text-white ">৫ আগস্ট সমাবেশের চিত্র</h2>
+                </div>
+              </div>
+              <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
+                <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
+                <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+                  <div class="d-flex justify-content-between gap-1 align-items-center">
+                    <div class="pic-caption px-3 py-2">
+                      <p class="text-start">লংমার্চ টু ঢাকা</p>
+                    </div>
+                    <div class="pic-source px-4 py-2">
+                      <p>ছবি প্রথম আলো থেকে </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute px-5 text-white top-50">
+                  <h2 class="text-white ">৫ আগস্ট সমাবেশের চিত্র</h2>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-section mb-5 d-none" style="margin-top: 40px;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-7 col-lg-7 col-xl-8 col-xxl-8 mb-3 mb-md-0">
@@ -257,7 +368,7 @@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
             <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
-            <h3> <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+            <h3> <span data-purecounter-start="0" data-purecounter-end-bg="232" data-purecounter-duration="1"
                 class="purecounter"></span></h3>
             <p>মোট শহীদ</p>
           </div>
@@ -265,7 +376,7 @@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
             <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
-            <h3> <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+            <h3> <span data-purecounter-start="0" data-purecounter-end="3521" data-purecounter-duration="1"
                 class="purecounter"></span></h3>
             <p>মোট আহত </p>
           </div>
@@ -285,7 +396,7 @@
             <div class="">
               <h3> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                   class="purecounter"></span></h3>
-              <p>মোট নিখোজ</p>
+              <p>মোট নিখোঁজ</p>
             </div>
           </div>
         </div>

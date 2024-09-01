@@ -39,8 +39,32 @@ body {
   --red: #bd1616;
   --green: #008000;
 }
-
+/* top header start */
+.top-header .message {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "SolaimanLipi";
+  color: #000;
+}
+.top-header .cta-btn {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "SolaimanLipi";
+  color: #000;
+}
+.top-header .cta-btn:hover {
+  background-color: #bd1616;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 2px;
+}
+/* top header end */
 /* header start */
+.header ul li a {
+  font-size: 18px;
+  font-family: "SolaimanLipi";
+  font-weight: 500;
+}
 .hero-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -108,7 +132,7 @@ body {
 }
 .hero-section .our-demands .card-text {
   font-size: 18px;
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "SolaimanLipi";
   font-weight: 400;
   line-height: 1.2;
   overflow: hidden;
@@ -135,7 +159,7 @@ body {
 
 .floating-btn .our-visitors {
   background-color: #bd1616;
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "SolaimanLipi";
   font-weight: 400;
   font-size: 19px;
 }
@@ -342,7 +366,7 @@ body {
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 600;
-  color: var(--bg_white);
+  color: white;
   font-family: "SolaimanLipi";
   line-height: 1.2;
   overflow: hidden;
