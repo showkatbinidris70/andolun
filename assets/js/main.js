@@ -139,33 +139,6 @@
    */
   new PureCounter();
 
-  function convertBanglaToEnglish(banglaNum) {
-    const banglaToEnglishMap = {
-      "০": "0",
-      "১": "1",
-      "২": "2",
-      "৩": "3",
-      "৪": "4",
-      "৫": "5",
-      "৬": "6",
-      "৭": "7",
-      "৮": "8",
-      "৯": "9",
-    };
-    return banglaNum.replace(/[০-৯]/g, function (match) {
-      return banglaToEnglishMap[match];
-    });
-  }
-
-  // Convert Bangla number '২৩২' to English '232'
-  const banglaNumber = "২৩২";
-  const englishNumber = convertBanglaToEnglish(banglaNumber);
-
-  // Set the converted number as the value of data-purecounter-end-bg attribute
-  document
-    .querySelector("[data-purecounter-end-bg]")
-    .setAttribute("data-purecounter-end-bg", englishNumber);
-
   /**
    * Init swiper sliders
    */
