@@ -395,6 +395,80 @@
     }
   }, 1000);
   // upcoming event end
+
+  // video gallery start
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const links = document.querySelectorAll("a[data-image]");
+  //   const images = document.querySelectorAll(".slider-image");
+  //   let isDragging = false;
+  //   let startX = 0;
+  //   let currentIndex = 0;
+
+  //   function activateImage(targetId) {
+  //     images.forEach((image) => {
+  //       if (image.id === targetId) {
+  //         image.classList.add("active");
+  //       } else {
+  //         image.classList.remove("active");
+  //       }
+  //     });
+  //     links.forEach((link) => {
+  //       link.classList.remove("active-link");
+  //     });
+  //     document
+  //       .querySelector(`a[data-image="${targetId}"]`)
+  //       .classList.add("active-link");
+  //   }
+
+  //   function handleLinkClick(event) {
+  //     event.preventDefault();
+  //     const targetId = this.getAttribute("data-image");
+  //     activateImage(targetId);
+  //   }
+  //   links.forEach((link) => {
+  //     link.addEventListener("click", handleLinkClick);
+  //   });
+  //   activateImage("image_1");
+  // });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a[data-video]");
+    const videos = document.querySelectorAll(".slider-video");
+
+    function activateVideo(targetId) {
+      // Remove active class from all videos
+      videos.forEach((video) => {
+        if (video.id === targetId) {
+          video.classList.add("active");
+        } else {
+          video.classList.remove("active");
+        }
+      });
+
+      // Remove active class from all links
+      links.forEach((link) => {
+        link.classList.remove("active-link");
+      });
+
+      // Add active class to the corresponding link
+      document
+        .querySelector(`a[data-video="${targetId}"]`)
+        .classList.add("active-link");
+    }
+
+    function handleLinkClick(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("data-video");
+      activateVideo(targetId);
+    }
+
+    // Add click event to links
+    links.forEach((link) => {
+      link.addEventListener("click", handleLinkClick);
+    });
+    activateVideo("video_1"); // Set the initial video to be active
+  });
+  // vidoe gallery end
 })();
 
 // ---------------------------------------------------------------------

@@ -40,18 +40,18 @@
 
 <body class="index-page">
 
-  <section class="top-header">
+  <section class="top-header" style="background-color: #a12c2f;">
     <div class="container">
       <div class="row">
         <div class="d-flex gap-3 justify-content-end align-items-center ">
-          <p class="message ">১ আগস্ট থেকে ৫ আগস্ট পর্যন্ত :: </p>
-          <a href="#" type="button" class="cta-btn p-2 rounded">
+          <p class="message  text-white">১ আগস্ট থেকে ৫ আগস্ট পর্যন্ত :: </p>
+          <a href="#" type="button" class="cta-btn p-2 rounded text-white">
             শহীদদের তথ্য জানান
           </a>
-          <a href="#" type="button" class="cta-btn p-2 rounded">
+          <a href="#" type="button" class="cta-btn p-2 rounded text-white">
             আহতদের তথ্য জানান
           </a>
-          <a href="#" type="button" class="cta-btn p-2 rounded">
+          <a href="#" type="button" class="cta-btn p-2 rounded text-white">
             নিখোঁজদের তথ্য জানান
           </a>
         </div>
@@ -384,8 +384,6 @@
     </div>
   </section>
 
-
-
   <section class="mission-vision-success" style="padding-bottom: 96px;">
     <div class="container">
       <div class="row">
@@ -443,7 +441,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- counter Section -->
   <section class="counter-section">
@@ -714,6 +711,45 @@
     </div>
   </section>
 
+  <style>
+    .main-content {
+      position: relative;
+    }
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .overlay {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .main-content:hover .image {
+      opacity: 0.5;
+    }
+
+    .main-content:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: black;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+  </style>
   <section class="my-5 py-5 all-shahid-list">
     <div class="container">
       <h2 class="text-center fs-1 fw-bold">আমাদের শহিদ গন</h2>
@@ -724,134 +760,279 @@
         <div class="grid-gallery">
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-1.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/abu-sayed.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আবু সাইদ</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/abu-jafor.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আবু জাফর</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/abdullah-al-abir.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আবদুল্লাহ আল আবীর</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/abdullah-al-tahir.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আব্দুল্লাহ আল তাহির</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/asif-hasan.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আসিফ হাসান</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/dr-sajib-sarker.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">ডাঃ সজীব সরকার</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/ikram-hosen-kawsar.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">ইকরাম হোসেন কাউছার</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/kalid-hasan-saifullah.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">খালিদ হাসান সাইফুল্লাহ</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/jabir-ibrahim.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">জাবির ইব্রাহিম</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/ahmed-sunny.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">আহমেদ সানি</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/tajul-islam.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">তাজুল ইসলাম</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/tahmid-tamim.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">তাহমিদ তামিম</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/mir-mugdho.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মীর মুগ্ধ</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/naima-sultana.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">নাইমা সুলতানা</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-2.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/nadim-mizan.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">নাদিম মিজান</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-3.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/nafisa-hossain-marwa.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">নাফিছা হোসেন মারওয়া</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-4.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/nahidul-islam.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">নাহিদুল ইসলাম</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-5.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/farhan-faiyaaz.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">ফারহান ফাইয়াজ</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-6.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/maruf-hossain.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মারুফ হোসাইন</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/md-omar-farooq.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মোঃ ওমর ফারুক</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" data-lightbox="gridImage">
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/nahidul-islam.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মোঃ নাহিদুল ইসলাম নাঈম</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-7.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/md-belal-hossain-rabbi.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মোঃ বেলাল হোসেন রাব্বি</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-8.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/md-mahbubul-hasan.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">মোঃ মাহবুবুল হাসান</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-9.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="images/img-10.jpg" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-10.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-11.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/riya-gope.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">রিয়া গোপ</div>
+                </div>
+              </div>
             </a>
           </div>
           <div class="grid-item">
             <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-12.jpg" />
+              <div class="main-content w-100 h-100">
+                <img src="./assets/img/rudro-sen.jpg" class="img-fluid w-100 h-100 image" />
+                <div class="overlay">
+                  <div class="text">রুদ্র সেন</div>
+                </div>
+              </div>
             </a>
           </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-13.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-14.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-15.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-16.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-17.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-18.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-17.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href=#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-1.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href=#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-2.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-3.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-4.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-5.jpg" />
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" data-lightbox="gridImage">
-              <img src="./assets/img/gird-gallery/img-6.jpg" />
-            </a>
-          </div>
+
+
         </div>
       </div>
       <div class="text-end px-0"><a href="#" class="btn see-more-btn-primary">আরো দেখুন</a></div>
     </div>
   </section>
+
   <style>
     .history .swiper {
       width: 100%;
@@ -941,6 +1122,7 @@
       color: white;
     }
   </style>
+
   <div class="history">
     <div class="container">
       <h2 class="text-white text-center mb-2">আন্দোলনের ইতিহাস</h2>
@@ -1365,7 +1547,7 @@
     </div>
   </section>
 
-  <section class="events" style="padding: 96px 0px;">
+  <section class="events d-none" style="padding: 96px 0px;">
     <div class="container">
       <h2 class="text-dark text-center">Events</h2>
       <div class="d-flex justify-content-center mb-3">
@@ -1666,7 +1848,7 @@
     /* lightbox video end */
   </style>
 
-  <section class="">
+  <section class="d-none">
     <div class="container light-box-bg-img-s">
       <div class="row">
         <div class="light-box-img w-100">
@@ -1725,7 +1907,7 @@
   </script>
   <!-- lisht box end -->
 
-  <div class="headline" style="padding: 96px 0px;">
+  <div class="headline d-none" style="padding: 96px 0px;">
     <div class="container">
       <div class="events">
         <p class="text-danger fw-bold text-center">OUR UPDATE</p>
@@ -1805,7 +1987,7 @@
     </div>
   </div>
 
-  <section id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+  <section id="video" class="lightbox d-none" onclick="hideVideo('video','youtube')">
     <div class="lightbox-container">
       <div class="lightbox-content">
         <button onclick="hideVideo('video','youtube')" class="lightbox-close" data-toggle="lightbox">
@@ -2160,7 +2342,680 @@
 
   </section><!-- /Services Section -->
 
+  <!-- video gallery start -->
+  <div class="video-gallery" style="margin: 96px 0px;">
+    <div class="container">
+      <h2 class="text-center fs-1 fw-bold">ভিডিও প্রদর্শনী</h2>
+      <div class="d-flex justify-content-center mb-2">
+        <p class="line-primary mb-4"></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <div>
+            <div class="position-relative">
+              <div>
+                <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A"
+                  class="video-frame w-100 position-absolute slider-video active" id="video_1" style="height: 500px;"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe src="https://www.youtube.com/embed/qekeI_a-E_g"
+                  class="video-frame w-100 position-absolute slider-video active" id="video_2" style="height: 500px;"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A"
+                  class="video-frame w-100 position-absolute slider-video active" id="video_3" style="height: 500px;"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe src="https://www.youtube.com/embed/qekeI_a-E_g"
+                  class="video-frame w-100 position-absolute slider-video active" id="video_4" style="height: 500px;"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div>
+                <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A"
+                  class="video-frame w-100 position-absolute slider-video active" id="video_5" style="height: 500px;"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+            <div class="btn-img d-flex d-lg-block gap-4">
+              <div class="overflow-auto" style="height: 500px;">
+                <a href="#" data-video="video_1">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-video="video_2">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-video="video_3">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-video="video_4">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-video="video_5">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="video-gallery d-none" style="margin: 96px 0px;">
+    <div class="container">
+      <h2 class="text-center fs-1 fw-bold">ভিডিও প্রদর্শনী</h2>
+      <div class="d-flex justify-content-center mb-2">
+        <p class="line-primary mb-4"></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <div>
+            <div class="position-relative">
+              <div>
+                <img src="./assets/img/andolon.webp" class="img-fluid w-100 position-absolute slider-image active"
+                  id="image_1" style="height: 500px;" />
+              </div>
+              <div><img src="./assets/img/asif.jpg" class="img-fluid w-100 position-absolute slider-image" id="image_2"
+                  style="height: 500px;" />
+              </div>
+              <div><img src="./assets/img/counter-bg.jpg" class="img-fluid w-100 position-absolute slider-image"
+                  id="image_3" style="height: 500px;" />
+              </div>
+              <div><img src="./assets/img/apple-touch-icon.png" class="img-fluid w-100 position-absolute slider-image"
+                  id="image_4" style="height: 500px;" />
+              </div>
+              <div><img src="./assets/img/asif.jpg" class="img-fluid w-100 position-absolute slider-image" id="image_5"
+                  style="height: 500px;" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+            <div class="btn-img d-flex d-lg-block gap-4">
+              <div class="overflow-auto" style="height: 500px;">
+                <a href="#" data-image="image_1">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_2">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_3">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_4">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_5">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-gallery d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-8">
+          <div class="position-relative">
+            <div><img src="./assets/img/andolon.webp" class="img-fluid w-100 position-absolute slider-image active"
+                id="image_1" style="height: 500px;" />
+            </div>
+            <div><img src="./assets/img/asif.jpg" class="img-fluid w-100 position-absolute slider-image" id="image_2"
+                style="height: 500px;" />
+            </div>
+            <div><img src="./assets/img/counter-bg.jpg" class="img-fluid w-100 position-absolute slider-image"
+                id="image_3" style="height: 500px;" />
+            </div>
+            <div><img src="./assets/img/apple-touch-icon.png" class="img-fluid w-100 position-absolute slider-image"
+                id="image_4" style="height: 500px;" />
+            </div>
+            <div><img src="./assets/img/asif.jpg" class="img-fluid w-100 position-absolute slider-image" id="image_5"
+                style="height: 500px;" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+            <div class="btn-img d-flex d-lg-block gap-4">
+              <div class="overflow-auto" style="height: 500px;">
+                <a href="#" data-image="image_1">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_2">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_3">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_4">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" data-image="image_5">
+                  <div class="card p-2 mb-3 border shadow-sm">
+                    <div class="text-dark fw-bold py-3">
+                      <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে
+                        থাকে।
+                        গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero-section video-gallery d-none" style="margin-bottom: 96px;">
+    <div class="container">
+      <h2 class="text-center fs-1 fw-bold">ভিডিও প্রদর্শনী</h2>
+      <div class="d-flex justify-content-center mb-2">
+        <p class="line-primary mb-4"></p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-7 col-lg-7 col-xl-8 col-xxl-8 mb-3 mb-md-0">
+          <div class="image-wrapper aspect-ratio-16-9 position-relative d-none">
+            <img src="./assets/img/andolon.webp" class="img-fluid" />
+            <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
+              <div class="d-flex justify-content-between gap-1 align-items-center">
+                <div class="pic-caption px-3 py-2">
+                  <p class="text-start">লংমার্চ টু ঢাকা</p>
+                </div>
+                <div class="pic-source px-3 py-2">
+                  <p>ছবি প্রথম আলো থেকে </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="image-wrapper aspect-ratio-16-9"><img src="./assets/img/andolon.webp"
+                class="img-fluid w-100 position-absolute slider-image active" id="image_1" />
+            </div>
+            <div class="image-wrapper aspect-ratio-16-9"><img src="./assets/img/asif.jpg"
+                class="img-fluid w-100 position-absolute slider-image" id="image_2" />
+            </div>
+            <div class="image-wrapper aspect-ratio-16-9"><img src="./assets/img/counter-bg.jpg"
+                class="img-fluid w-100 position-absolute slider-image" id="image_3" />
+            </div>
+            <div class="image-wrapper aspect-ratio-16-9"><img src="./assets/img/apple-touch-icon.png"
+                class="img-fluid w-100 position-absolute slider-image" id="image_4" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-4 col-xxl-4 mb-3 mb-md-0">
+          <div class="d-flex gap-4 align-items-center justify-content-center">
+
+          </div>
+          <div class="overflow-auto our-demands d-none">
+            <div class="card p-2 mb-3 border shadow-sm">
+              <div class="text-white fw-bold">
+                <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে থাকে।
+                  গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                </p>
+              </div>
+            </div>
+            <div class="card p-2 mb-3 border shadow-sm">
+              <div class="text-white fw-bold">
+                <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে থাকে।
+                  গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                </p>
+              </div>
+            </div>
+            <div class="card p-2 mb-3 border shadow-sm">
+              <div class="text-white fw-bold">
+                <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে থাকে।
+                  গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                </p>
+              </div>
+            </div>
+            <div class="card p-2 mb-3 border shadow-sm">
+              <div class="text-white fw-bold">
+                <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে থাকে।
+                  গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                </p>
+              </div>
+            </div>
+            <div class="card p-2 mb-3 border shadow-sm">
+              <div class="text-white fw-bold">
+                <p class="card-text">স্বৈরতান্ত্রিক শাসনব্যবস্থায় প্রকৃতার্থে নাগরিকদের অবস্থা পণবন্দীর মতোই হয়ে থাকে।
+                  গবেষণায় দেখা গেছে স্বৈরশাসকের প্রতি নাগরিকদের একটা অংশের মধ্যে অন্ধ মোহ তৈরি হয়।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- video gallery end -->
+
+  <!-- photo gallery -->
+  <section class="photo-gallery">
+    <div class="container">
+      <h2 class="text-center fs-1 fw-bold">ছবি প্রদর্শনী</h2>
+      <div class="d-flex justify-content-center mb-2">
+        <p class="line-primary"></p>
+      </div>
+      <div class="row justify-content-between my-3">
+        <ul class="nav text-white d-flex justify-content-center gap-2 mb-4">
+          <li class="nav-item">
+            <a class="nav-link link-secondary active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+              href="#">সব</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" id="graphity-tab" data-bs-toggle="tab" data-bs-target="#graphity"
+              href="#">গ্রাফিতি</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" id="longmarchToDhaka-tab" data-bs-toggle="tab"
+              data-bs-target="#longmarchToDhaka" href="#">লংমার্চ টু ঢাকা</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="tabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="graphity" role="graphity" aria-labelledby="graphity-tab">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="longmarchToDhaka" role="tabpanel" aria-labelledby="longmarchToDhaka-tab">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
+                  <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio section py-5 d-none">
 
@@ -2590,7 +3445,6 @@
 
   </section><!-- /Contact Section -->
 
-
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
@@ -2666,8 +3520,6 @@
     <div></div>
     <div></div>
   </div>
-
-
 
   <!-- swiper slider js  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
