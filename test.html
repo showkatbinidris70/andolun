@@ -29,9 +29,79 @@
             z-index: 1000;
         }
     </style>
+
+    <style>
+        .card-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 0, 0, 0.475);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: .3s ease;
+            transition: .3s ease;
+            border-radius: 4px;
+        }
+
+        .image-card:hover .img-overlay {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .card-info {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-gl-4 col-xl-3">
+                <div class="card border-0 shadow image-card">
+                    <div class="position-relative">
+                        <img src="./assets/img/1.jpg" class="img-fluid card-image rounded" alt="Avatar">
+                        <div class="img-overlay">
+                            <div class="card-info">
+                                <h5>নাম: সারজিস আলম</h5>
+                                <h6> প্রতিষ্ঠান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-gl-4 col-xl-3">
+                <div>
+                    <img src="./assets/img/1.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-gl-4 col-xl-3">
+                <div>
+                    <img src="./assets/img/1.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="video-gallery" style="margin: 96px 0px;">
         <div class="container">
@@ -134,44 +204,44 @@
         crossorigin="anonymous"></script>
 
     <script>
-        
+
         document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("a[data-video]");
-    const videos = document.querySelectorAll(".slider-video");
+            const links = document.querySelectorAll("a[data-video]");
+            const videos = document.querySelectorAll(".slider-video");
 
-    function activateVideo(targetId) {
-      // Remove active class from all videos
-      videos.forEach((video) => {
-        if (video.id === targetId) {
-          video.classList.add("active");
-        } else {
-          video.classList.remove("active");
-        }
-      });
+            function activateVideo(targetId) {
+                // Remove active class from all videos
+                videos.forEach((video) => {
+                    if (video.id === targetId) {
+                        video.classList.add("active");
+                    } else {
+                        video.classList.remove("active");
+                    }
+                });
 
-      // Remove active class from all links
-      links.forEach((link) => {
-        link.classList.remove("active-link");
-      });
+                // Remove active class from all links
+                links.forEach((link) => {
+                    link.classList.remove("active-link");
+                });
 
-      // Add active class to the corresponding link
-      document
-        .querySelector(`a[data-video="${targetId}"]`)
-        .classList.add("active-link");
-    }
+                // Add active class to the corresponding link
+                document
+                    .querySelector(`a[data-video="${targetId}"]`)
+                    .classList.add("active-link");
+            }
 
-    function handleLinkClick(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute("data-video");
-      activateVideo(targetId);
-    }
+            function handleLinkClick(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("data-video");
+                activateVideo(targetId);
+            }
 
-    // Add click event to links
-    links.forEach((link) => {
-      link.addEventListener("click", handleLinkClick);
-    });
-    activateVideo("video_1"); // Set the initial video to be active
-  });
+            // Add click event to links
+            links.forEach((link) => {
+                link.addEventListener("click", handleLinkClick);
+            });
+            activateVideo("video_1"); // Set the initial video to be active
+        });
 
     </script>
 </body>

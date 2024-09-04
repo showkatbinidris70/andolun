@@ -37,7 +37,7 @@ body {
   /* color */
   --black: #000000;
   --white: #ffffff;
-  --red: #bd1616;
+  --red: #a12c2f;
   --green: #008000;
 }
 
@@ -190,7 +190,7 @@ body {
   font-size: 24px;
   font-family: "SolaimanLipi";
   font-weight: 400;
-  background-color: #a12c2f;
+  /* background-color: #a12c2f; */
   color: var(--white);
 }
 .scrolling-news .marq .marque-text {
@@ -259,7 +259,7 @@ body {
 /* all-shamonnoyk-list start */
 .all-shamonnoyk-list .swiper {
   width: 100%;
-  height: 650px;
+  height: 830px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -276,8 +276,8 @@ body {
 }
 
 .all-shamonnoyk-list .swiper-slide img {
-  height: 200px !important;
-  width: 200px !important;
+  /* height: 200px !important; */
+  /* width: 200px !important; */
   object-fit: cover;
 }
 .all-shamonnoyk-list .title {

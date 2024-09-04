@@ -268,7 +268,7 @@
   });
 
   var showkat = new Swiper(".shamonnoyk", {
-    slidesPerView: 5,
+    slidesPerView: 4,
     loop: true,
     spaceBetween: 30,
 
@@ -315,7 +315,7 @@
         },
       },
       1400: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 20,
         grid: {
           rows: 2,
