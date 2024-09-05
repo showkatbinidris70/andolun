@@ -109,6 +109,7 @@ header .navbar-brand {
   font-family: "SolaimanLipi";
   font-weight: 500;
 }
+
 .hero-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -158,7 +159,8 @@ header .navbar-brand {
 }
 
 .hero-section .aspect-ratio-16-9 {
-  padding-bottom: 56.25%;
+  /* padding-bottom: 56.25%; */
+  padding-bottom: 87vh;
   /* 16:9 aspect ratio */
 }
 
@@ -422,6 +424,7 @@ header .navbar-brand {
   display: block;
   width: 100%;
   height: 395px;
+  /* height: 320px; */
 }
 
 /* .all-shamonnoyk-list .img-overlay {
@@ -626,12 +629,9 @@ header .navbar-brand {
   padding-bottom: 60px;
   width: 100%;
   min-height: 17rem;
-  /* background-color: var(--White); */
-  background-image: url("../img/meetings-bg.jpg") #ffffff10;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-blend-mode: multiply;
+
+  /* background-color: #8e1e1e17; 
+  background-image: linear-gradient(rgb(10, 9, 9), rgba(255, 0, 0, 0.546)); */
 }
 .mission-vision-success .card-item {
   background-image: url("../img/service-item-bg.jpg");
