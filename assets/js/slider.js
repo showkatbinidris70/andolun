@@ -1,3 +1,15 @@
+// loading animation
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 // hero slider start
 var swiper = new Swiper(".heroSwiperSwiper", {
   cssMode: true,
@@ -127,3 +139,37 @@ var historySwiperSlider = new Swiper(".historySwiperSlider", {
   },
 });
 // hsitory end
+
+// upcoming event start
+var countdownDate = new Date("Dec 31, 2024 10:00:00").getTime();
+
+// Update the countdown every 1 second
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countdownDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 6 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  // If the countdown is finished
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "0";
+    document.getElementById("hours").innerHTML = "0";
+    document.getElementById("minutes").innerHTML = "0";
+    document.getElementById("seconds").innerHTML = "0";
+  }
+}, 1000);
+// upcoming event end
+
+// aos initialization
+AOS.init();

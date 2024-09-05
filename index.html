@@ -31,7 +31,7 @@
 
 <body>
 
-  <section class="top-header">
+  <section class="top-header d-none d-lg-block">
     <div class="container">
       <div class="row">
         <div class="d-flex gap-3 justify-content-end align-items-center ">
@@ -50,42 +50,28 @@
     </div>
   </section>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">বাংলাদেশ ২.০</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#about">হোম</a></li>
-          <li><a href="#services">পটভূমি</a></li>
-          <li><a href="#services">সমন্বয়ক</a></li>
-          <li><a href="#about">কর্মসূচি</a></li>
-          <li><a href="#about">যোগাযোগ</a></li>
-          <li class="dropdown d-none"><a href="#"><span>Dropdown</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li class="d-none"><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <header class="sticky-top bg-white">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">বাংলাদেশ ২.০</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">হোম</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">পটভূমি</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">সমন্বয়ক</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">কর্মসূচি</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">যোগাযোগ</a></li>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -117,22 +103,6 @@
     <div class="swiper heroSwiperSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
-          <img src="./assets/img/andolon.webp" class="img-fluid" />
-          <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
-            <div class="d-flex justify-content-between gap-1 align-items-center">
-              <div class="pic-caption px-3 py-2">
-                <p class="text-start">লংমার্চ টু ঢাকা</p>
-              </div>
-              <div class="pic-source ps-1 ps-md-3 ps-lg-4 ps-xl-5 py-2">
-                <p>ছবি প্রথম আলো থেকে </p>
-              </div>
-            </div>
-          </div>
-          <div class="position-absolute px-5 text-white top-50">
-            <h2 class="text-white ">১ আগস্ট সমাবেশের চিত্র</h2>
-          </div>
-        </div>
-        <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
           <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
           <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
             <div class="d-flex justify-content-between gap-1 align-items-center">
@@ -150,38 +120,6 @@
         </div>
         <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
           <img src="./assets/img/andolon.webp" class="img-fluid" />
-          <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
-            <div class="d-flex justify-content-between gap-1 align-items-center">
-              <div class="pic-caption px-3 py-2">
-                <p class="text-start">লংমার্চ টু ঢাকা</p>
-              </div>
-              <div class="pic-source ps-1 ps-md-3 ps-lg-4 ps-xl-5 py-2">
-                <p>ছবি প্রথম আলো থেকে </p>
-              </div>
-            </div>
-          </div>
-          <div class="position-absolute px-5 text-white top-50">
-            <h2 class="text-white ">৫ আগস্ট সমাবেশের চিত্র</h2>
-          </div>
-        </div>
-        <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
-          <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
-          <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
-            <div class="d-flex justify-content-between gap-1 align-items-center">
-              <div class="pic-caption px-4 py-2">
-                <p class="text-start">লংমার্চ টু ঢাকা</p>
-              </div>
-              <div class="pic-source ps-1 ps-md-3 ps-lg-4 ps-xl-5 py-2">
-                <p>ছবি প্রথম আলো থেকে </p>
-              </div>
-            </div>
-          </div>
-          <div class="position-absolute px-5 text-white top-50">
-            <h2 class="text-white ">৫ আগস্ট সমাবেশের চিত্র</h2>
-          </div>
-        </div>
-        <div class="swiper-slide image-wrapper aspect-ratio-16-9 position-relative">
-          <img src="./assets/img/shahid-minar-protest.jpg" class="img-fluid" />
           <div class="position-absolute bottom-0 left-0 right-0 w-100 mb-3 py-2 bottom-title">
             <div class="d-flex justify-content-between gap-1 align-items-center">
               <div class="pic-caption px-3 py-2">
@@ -995,9 +933,9 @@
               <div>
                 <ul>
                   <li>
-                    <p class="text-white">July 5, 2024 <span>10:00 - 12:00</span> </p>
+                    <p class="text-white">৫ জুলাই, ২০২৪, <span>সকাল ১০:০০ - দুপুর ১২:০০</span> </p>
                   </li>
-                  <li class="text-white">Dhaka, Bangladesh</li>
+                  <li class="text-white">ঢাকা, বাংলাদেশ</li>
                 </ul>
 
               </div>
@@ -1022,7 +960,8 @@
               </div>
             </div>
             <div class="text-start mx-4 mt-5 mb-3">
-              <a href="#" class="bt px-5 py-3 text-white rounded" style="background-color: #8e1e1e;">যোগ দিন</a>
+              <a href="#" class="bt px-5 py-3 text-white rounded" style="background-color: rgb(161, 44, 47);">যোগ
+                দিন</a>
             </div>
           </div>
         </div>
@@ -1030,7 +969,7 @@
     </div>
   </section>
 
-  <section class="latest-news">
+  <section class="latest-news d-none">
     <div class="container">
       <div>
         <h2 class="text-center fw-bold fs-1 text-white mb-4">LATEST NEWS</h2c>
@@ -1096,17 +1035,20 @@
     </div>
   </section>
 
-
   <!-- video container start -->
   <section class="show-video">
     <div class="container">
+      <h2 class="text-center fs-1 fw-bold"> প্রদর্শনী</h2>
+      <div class="d-flex justify-content-center mb-2">
+        <p class="line-primary"></p>
+      </div>
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 col-xxl-9">
-          <div class="video-container" onclick="showVideo()" style="background-color: ;">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 col-xxl-9 mb-4 mb-lg-0">
+          <div class="video-container" onclick="showVideo()">
             <div class="position-relative">
               <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image" alt="Thumbnail">
-              <button class="btn btn-show btn-primary position-absolute"
-                style="top: 045% !important; left: 45% !important;">Show</button>
+              <button class="btn btn-show position-absolute"
+                style="top: 045% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
             </div>
             <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
               frameborder="0"
@@ -1118,9 +1060,10 @@
           <div class="side-video">
             <div class="video-container-2" onclick="showVideo_2()">
               <div class="position-relative">
-                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-2" alt="Thumbnail">
-                <button class="btn btn-show-2 btn-primary position-absolute"
-                  style="top: 045% !important; left: 45% !important;">Show</button>
+                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-2"
+                  alt="Thumbnail">
+                <button class="btn btn-show-2 position-absolute"
+                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1131,9 +1074,10 @@
           <div class="side-video my-4">
             <div class="video-container-3" onclick="showVideo_3()">
               <div class="position-relative">
-                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-3" alt="Thumbnail">
-                <button class="btn btn-show-3 btn-primary position-absolute"
-                  style="top: 045% !important; left: 45% !important;">Show</button>
+                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-3"
+                  alt="Thumbnail">
+                <button class="btn btn-show-3 position-absolute"
+                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1144,9 +1088,10 @@
           <div class="side-video">
             <div class="video-container-4" onclick="showVideo_4()">
               <div class="position-relative">
-                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-4" alt="Thumbnail">
-                <button class="btn btn-show-4 btn-primary position-absolute"
-                  style="top: 045% !important; left: 45% !important;">Show</button>
+                <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-4"
+                  alt="Thumbnail">
+                <button class="btn btn-show-4 position-absolute"
+                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1185,7 +1130,7 @@
         <div class="tab-content" id="tabContent">
           <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
             <div class="row">
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
                   style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
                   <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
@@ -1200,7 +1145,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
                   style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
                   <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
@@ -1216,7 +1161,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
                   style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
                   <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
@@ -1231,7 +1176,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
                   style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
                   <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
@@ -1246,7 +1191,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
                   style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
                   <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
@@ -1276,7 +1221,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/ahmed-sunny.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1287,7 +1232,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1298,7 +1243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1309,7 +1254,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1320,7 +1265,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1331,7 +1276,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded" />
                   <div class="image-overlay-bottom-to-up-overlay">
@@ -1358,7 +1303,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up" style="height: 400px;">
                   <img src="./assets/img/abdullah-al-abir.jpg"
                     class="img-fluid image-overlay-bottom-to-up-image rounded" style="height: 400px;" />
@@ -1370,7 +1315,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up" style="height: 400px;">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded"
                     style="height: 400px;" />
@@ -1382,7 +1327,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up" style="height: 400px;">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded"
                     style="height: 400px;" />
@@ -1394,7 +1339,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up" style="height: 400px;">
                   <img src="./assets/img/andolon.webp" class="img-fluid image-overlay-bottom-to-up-image rounded"
                     style="height: 400px;" />
@@ -1425,12 +1370,12 @@
             <p class="mt-3"><strong>ফোন:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>ইমেইল:</strong> <span>info@example.com</span></p>
           </div>
-          <div class="social-links d-flex mt-4">
+          <!-- <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
@@ -1449,6 +1394,9 @@
             <li><a href="#">আহতদের তালিকা করা</a></li>
             <li><a href="#">নিহতদের তালিকা করা</a></li>
             <li><a href="#">নিখোঁজদের তালিকা করা</a></li>
+            <li><a href="#"> শহীদদের তথ্য জানান</a></li>
+            <li><a href="#"> আহতদের তথ্য জানান</a></li>
+            <li><a href="#"> নিখোঁজদের তথ্য জানান</a></li>
           </ul>
         </div>
 
