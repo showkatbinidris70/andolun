@@ -288,6 +288,7 @@ header .navbar-brand {
   object-fit: cover; /* Ensures the image scales while keeping its center in focus */
   z-index: -1;
   animation: counter-ani-one 5s infinite linear;
+  object-position: 80px 110px;
 }
 
 .counter-section .counter-item h3 {
@@ -393,7 +394,7 @@ header .navbar-brand {
 }
 .all-shamonnoyk-list .swiper {
   width: 100%;
-  height: 830px;
+  height: 675px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -423,7 +424,7 @@ header .navbar-brand {
 .all-shamonnoyk-list .card-image {
   display: block;
   width: 100%;
-  height: 395px;
+  height: 325px;
   /* height: 320px; */
 }
 
