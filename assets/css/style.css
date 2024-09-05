@@ -59,6 +59,18 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+.breakcrumb {
+  background-color: #1f03037c;
+  /* background-color: rgba(0, 128, 0, 0.401); */
+  /* background-image: url("./assets/img/counter-bg.jpg"); */
+  background-image: url("/assets/img/Bangladesh-PR-5-Aug.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-blend-mode: multiply;
+}
 /* top header start */
 .top-header {
   background-color: #a12c2f;
@@ -185,15 +197,18 @@ header .navbar-brand {
 .floating-btn {
   z-index: 999;
   position: fixed;
-  right: 2rem;
+  right: 8px;
   top: 48%;
+  -webkit-box-shadow: -3px 1px 33px -1px rgba(161, 44, 47, 1);
+  -moz-box-shadow: -3px 1px 33px -1px rgba(161, 44, 47, 1);
+  box-shadow: -3px 1px 33px -1px rgba(161, 44, 47, 1);
 }
 
 .floating-btn .our-visitors {
   background-color: #a12c2f;
   font-family: "SolaimanLipi";
   font-weight: 400;
-  font-size: 19px;
+  font-size: 14px;
 }
 /* foloating btn end */
 
@@ -205,6 +220,7 @@ header .navbar-brand {
     rgba(252, 9, 9, 1) 0%,
     rgba(0, 128, 0, 1) 74%
   );
+  height: 40px;
 }
 .scrolling-news .title {
   font-size: 24px;
@@ -259,6 +275,17 @@ header .navbar-brand {
   height: 100%;
   z-index: -1;
   animation: counter-ani-one 5s infinite linear;
+  object-fit: cover;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures the image scales while keeping its center in focus */
+  z-index: -1;
+  animation: counter-ani-one 5s infinite linear;
 }
 
 .counter-section .counter-item h3 {
@@ -277,7 +304,7 @@ header .navbar-brand {
 /* counter-section end */
 /* video container start */
 .show-video {
-  margin-top: 96px;
+  margin-top: 60px;
 }
 .show-video .video-container {
   position: relative;
@@ -360,7 +387,7 @@ header .navbar-brand {
 /* all-shamonnoyk-list start */
 .all-shamonnoyk-list {
   background-color: #dddddd46;
-  padding: 96px 0px;
+  padding: 60px 0px;
 }
 .all-shamonnoyk-list .swiper {
   width: 100%;
@@ -397,7 +424,48 @@ header .navbar-brand {
   height: 395px;
 }
 
+/* .all-shamonnoyk-list .img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.475);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 4px;
+} */
+/* .all-shamonnoyk-list .img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.475);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 4px;
+} */
+
 .all-shamonnoyk-list .img-overlay {
+  color: white;
+  position: absolute;
+  text-align: start;
+  font-family: "SolaimanLipi";
+  font-weight: 400;
+  font-size: 16px;
+  text-wrap: nowrap;
+
   position: absolute;
   bottom: 0;
   left: 0;
@@ -433,7 +501,7 @@ header .navbar-brand {
 /* all-shamonnoyk-list end */
 /* all shahid list start */
 .all-shahid-list {
-  padding: 96px 0px;
+  padding: 60px 0px;
 }
 .all-shahid-list .title {
   font-size: 52px;
@@ -480,7 +548,7 @@ header .navbar-brand {
 /* all shahid list end */
 /* main banner start */
 .main-banner {
-  margin-top: 96px;
+  margin-top: 60px;
   position: relative;
   max-height: 100%;
   overflow: hidden;
@@ -555,7 +623,7 @@ header .navbar-brand {
 /* mission-vision-success  start*/
 .mission-vision-success {
   margin-top: -135px;
-  padding-bottom: 96px;
+  padding-bottom: 60px;
   width: 100%;
   min-height: 17rem;
   /* background-color: var(--White); */
@@ -622,7 +690,7 @@ header .navbar-brand {
 }
 .our-heros h2 {
   color: #fff;
-  font-size: 48px;
+  font-size: 60px;
   font-family: "SolaimanLipi";
   font-weight: 600;
   line-height: 1.5;
@@ -801,9 +869,11 @@ header .navbar-brand {
 /* history start */
 .history .swiper {
   width: 100%;
-  height: 600px;
+  height: 610px;
 }
-
+.history .history-width {
+  width: 75%;
+}
 .history .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -838,8 +908,8 @@ header .navbar-brand {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-blend-mode: multiply;
 }
 
@@ -889,10 +959,10 @@ header .navbar-brand {
 
 .history h2 {
   color: #fff;
-  font-size: 48px;
+  font-size: 60px;
   font-family: "SolaimanLipi";
   font-weight: 600;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -974,7 +1044,7 @@ header .navbar-brand {
 
 /* upcoming-events start */
 .upcoming-events {
-  margin: 96px 0px;
+  margin: 60px 0px;
 }
 .upcoming-events .upcoming-events-content {
   width: 100%;
@@ -1016,7 +1086,7 @@ header .navbar-brand {
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
-  padding: 96px 0px;
+  padding: 60px 0px;
 }
 .latest-news .site-img {
   width: 39.5%;
@@ -1146,7 +1216,7 @@ header .navbar-brand {
 
 /* photo-gallery start */
 .photo-gallery {
-  margin-top: 96px;
+  margin-top: 60px;
 }
 
 .photo-gallery .nav-link.active {
@@ -1204,7 +1274,8 @@ header .navbar-brand {
   width: 100%;
   height: 0;
   transition: 0.5s ease;
-  border-radius: 6px;
+  /* border-radius: 6px; */
+  border-radius: 40px;
 }
 
 .photo-gallery
@@ -1372,7 +1443,7 @@ header .navbar-brand {
   /* show videos */
   /* video container start */
   .show-video {
-    margin-top: 96px;
+    margin-top: 60px;
   }
   .show-video .video-container {
     position: relative;
@@ -1452,6 +1523,11 @@ header .navbar-brand {
   /* ---------------------------------------------------- */
 
   /* video container end */
+
+  /* history */
+  .history .history-width {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -1465,16 +1541,16 @@ header .navbar-brand {
     grid-gap: 5px;
   }
   .all-shamonnoyk-list .title {
-    font-size: 48px;
+    font-size: 60px;
   }
   #bg-video {
     height: 600px;
   }
 
-   /* show videos */
+  /* show videos */
   /* video container start */
   .show-video {
-    margin-top: 96px;
+    margin-top: 60px;
   }
   .show-video .video-container {
     position: relative;
@@ -1554,6 +1630,11 @@ header .navbar-brand {
   /* ---------------------------------------------------- */
 
   /* video container end */
+
+  /* history */
+  .history .history-width {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -1577,7 +1658,7 @@ header .navbar-brand {
     grid-gap: 5px;
   }
   .all-shamonnoyk-list .title {
-    font-size: 48px;
+    font-size: 60px;
   }
   #bg-video {
     height: 600px;
@@ -1585,7 +1666,7 @@ header .navbar-brand {
   /* show videos */
   /* video container start */
   .show-video {
-    margin-top: 96px;
+    margin-top: 60px;
   }
   .show-video .video-container {
     position: relative;
@@ -1665,6 +1746,11 @@ header .navbar-brand {
   /* ---------------------------------------------------- */
 
   /* video container end */
+
+  /* history */
+  .history .history-width {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 575.98px) {
@@ -1707,7 +1793,7 @@ header .navbar-brand {
   /* show videos */
   /* video container start */
   .show-video {
-    margin-top: 96px;
+    margin-top: 60px;
   }
   .show-video .video-container {
     position: relative;
@@ -1787,6 +1873,11 @@ header .navbar-brand {
   /* ---------------------------------------------------- */
 
   /* video container end */
+
+  /* history */
+  .history .history-width {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 375.98px) {
@@ -1827,10 +1918,9 @@ header .navbar-brand {
   .upcoming-events .upcoming-events-content .countdown-circle .label {
     font-size: 18px;
   }
-/* show videos */
   /* video container start */
   .show-video {
-    margin-top: 96px;
+    margin-top: 60px;
   }
   .show-video .video-container {
     position: relative;
@@ -1868,8 +1958,6 @@ header .navbar-brand {
     display: none;
   }
   /* ---------------------------------------------------- */
-
-  /* ---------------------------------------------------- */
   .show-video .video-container-3 {
     position: relative;
     width: 100%;
@@ -1887,7 +1975,6 @@ header .navbar-brand {
   .show-video .video-container-3 iframe {
     display: none;
   }
-  /* ---------------------------------------------------- */
 
   /* ---------------------------------------------------- */
   .show-video .video-container-4 {
@@ -1907,7 +1994,9 @@ header .navbar-brand {
   .show-video .video-container-4 iframe {
     display: none;
   }
-  /* ---------------------------------------------------- */
-
   /* video container end */
+  /* history */
+  .history .history-width {
+    width: 100%;
+  }
 }

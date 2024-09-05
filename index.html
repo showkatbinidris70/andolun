@@ -53,9 +53,9 @@
   <header class="sticky-top bg-white">
     <div class="container">
       <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">বাংলাদেশ ২.০</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
+          <div class="container">
+            <a class="navbar-brand" href="/">বাংলাদেশ ২.০</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -63,11 +63,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">হোম</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">পটভূমি</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">সমন্বয়ক</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">কর্মসূচি</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">যোগাযোগ</a></li>
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="/">হোম</a></li>
+                <li class="nav-item"><a class="nav-link" href="patobhomi.html">পটভূমি</a></li>
+                <li class="nav-item"><a class="nav-link" href="/shamonnoyk.html">সমন্বয়ক</a></li>
+                <li class="nav-item"><a class="nav-link" href="/workshop.html">কর্মসূচি</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact-us.html">যোগাযোগ</a></li>
             </div>
           </div>
         </nav>
@@ -76,21 +76,33 @@
   </header>
 
   <section class="floating-btn d-none d-md-block">
-    <div class="">
-      <p class="our-visitors rounded text-white p-2 d-flex align-items-center">আমাদের মোট দর্শক : <span
-          class="fw-bold fs-5">২২২৫</span></p>
+    <div class="our-visitors p-2">
+      <p class="rounded text-white d-flex align-items-center">আমাদের মোট দর্শক </p>
+      <p class=" rounded text-white d-flex align-items-center justify-content-center">২২২৫</p>
     </div>
   </section>
 
   <section class="scrolling-news">
+    <div class="row d-none">
+      <div class="d-flex gap-3 justify-content-between">
+        <div class="titl px-1 d-flex align-items-center">সর্বশেষ খবর</div>
+        <div class="container d-flex justify-content-end px-0 mx-0">
+          <marquee class="d-flex align-items-center marq" bgcolor="green" direction="left" loop="">
+            <p class="marque-text text-white px-1 py-1">এবার সচিবালয়ে ঢুকে এইচএসসি পরীক্ষার্থীদের বিক্ষোভ, স্থগিত
+              পরীক্ষা না দেওয়ার দাবি</p>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-2 pe-0">
-          <div class="title px-1 d-flex align-items-center w-100 h-100 justify-content-center py-2">সর্বশেষ খবর</div>
+          <div class="title px-1 d-flex align-items-center w-100 h-100 justify-content-start pb-1">সর্বশেষ খবর</div>
         </div>
         <div class=" col-7 col-sm-8 col-md-9 col-lg-9 col-xl-9 col-xxl-10 ps-0">
           <marquee class="d-flex align-items-center marq" bgcolor="green" direction="left" loop="">
-            <p class="marque-text text-white px-1 py-2">এবার সচিবালয়ে ঢুকে এইচএসসি পরীক্ষার্থীদের বিক্ষোভ, স্থগিত
+            <p class="marque-text text-white px-1 pb-1">এবার সচিবালয়ে ঢুকে এইচএসসি পরীক্ষার্থীদের বিক্ষোভ, স্থগিত
               পরীক্ষা না দেওয়ার দাবি</p>
           </marquee>
         </div>
@@ -232,15 +244,16 @@
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
-            <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
+            <img src="./assets/img/001.jpeg" class="h-100" alt="" srcset="" style="width: 100%;">
             <h3> <span data-purecounter-start="0" data-purecounter-end="352" data-purecounter-duration="1"
                 class="purecounter"></span></h3>
             <p>মোট শহীদ</p>
+            <!-- <div class="position-absolute top-0 left-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div> -->
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
-            <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
+            <img src="./assets/img/002.jpeg" class="h-100" alt="" srcset="" style="width: 100%;">
             <h3> <span data-purecounter-start="0" data-purecounter-end="3521" data-purecounter-duration="1"
                 class="purecounter"></span></h3>
             <p>মোট আহত </p>
@@ -248,7 +261,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
-            <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
+            <img src="./assets/img/003.jpeg" class="h-100" alt="" srcset="" style="width: 100%;">
             <h3> <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
                 class="purecounter"></span></h3>
             <p>হাসপাতালে ভর্তি</p>
@@ -257,7 +270,7 @@
 
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
           <div class="counter-item position-relative">
-            <img src="./assets/img/counter-shape2.png" class="" alt="" srcset="">
+            <img src="./assets/img/004.jpeg" class="h-100" alt="" srcset="" style="width: 100%;">
             <div class="">
               <h3> <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                   class="purecounter"></span></h3>
@@ -337,7 +350,7 @@
                   <img src="./assets/img/Abu Baker Majumder.jpeg" class="img-fluid card-image" alt="Avatar">
                   <div class="img-overlay">
                     <div class="card-info">
-                      <h5 class="text-white mx-3 shamonnoyk-name">নাম: আবু বাকের মজুমদার</h5>
+                      <h5 class="text-white mx-3 shamonnoyk-name text-nowrap">নাম: আবু বাকের মজুমদার</h5>
                       <h6 class="text-white mx-3 shamonnoyk-institution"> প্রতিষ্ঠান: ঢাকা বিশ্ববিদ্যালয়</h6>
                     </div>
                   </div>
@@ -447,9 +460,10 @@
   <section class="all-shahid-list">
     <div class="container">
       <h2 class="text-center fs-1 fw-bold">আমাদের শহিদ গন</h2>
-      <div class="d-flex justify-content-center mb-4">
+      <div class="d-flex justify-content-center">
         <p class="line-primary"></p>
       </div>
+
       <div class="row">
         <div class="grid-gallery">
           <div class="grid-item">
@@ -729,13 +743,14 @@
 
   <div class="history">
     <div class="container">
-      <h2 class="text-white text-center mb-2">আন্দোলনের ইতিহাস</h2>
+      <!-- <h2 class="text-white text-center title mb-2">আন্দোলনের ইতিহাস</h2> -->
+      <h2 class="text-center fs-1 fw-bold mb-2">আন্দোলনের ইতিহাস</h2>
       <div class="row">
         <!-- Swiper -->
         <div class="swiper historySwiperSlider position-relative">
           <div class="swiper-wrapper">
-            <div class="swiper-slide bg-transparent">
-              <div class="w-75">
+            <div class="swiper-slide bg-transparent mb-4">
+              <div class="history-width">
                 <div class="card border-0 shadow px-0 w-100 mb-4">
                   <div class="d-flex align-items-center gap-2">
                     <div class="date text-center">
@@ -819,8 +834,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide bg-transparent">
-              <div class="w-75">
+            <div class="swiper-slide bg-transparent mb-4">
+              <div class="history-width">
                 <div class="card border-0 shadow px-0 w-100 mb-4">
                   <div class="d-flex align-items-center gap-2">
                     <div class="date text-center">
@@ -1048,7 +1063,7 @@
             <div class="position-relative">
               <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image" alt="Thumbnail">
               <button class="btn btn-show position-absolute"
-                style="top: 045% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
+                style="top: 045% !important; left: 45% !important; background-color: #a12c2f; color: #fff; padding: 10px;">দেখুন</button>
             </div>
             <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
               frameborder="0"
@@ -1063,7 +1078,7 @@
                 <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-2"
                   alt="Thumbnail">
                 <button class="btn btn-show-2 position-absolute"
-                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
+                  style="top: 040% !important; left: 45% !important; background-color: #a12c2f; color: #fff; padding: 10px;">দেখুন</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1077,7 +1092,7 @@
                 <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-3"
                   alt="Thumbnail">
                 <button class="btn btn-show-3 position-absolute"
-                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
+                  style="top: 040% !important; left: 45% !important; background-color: #a12c2f; color: #fff; padding: 10px;">দেখুন</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1091,7 +1106,7 @@
                 <img src="https://img.youtube.com/vi/Pyle8DNiv8A/hqdefault.jpg" class="thumbnail-image-4"
                   alt="Thumbnail">
                 <button class="btn btn-show-4 position-absolute"
-                  style="top: 040% !important; left: 45% !important; background-color: red; color: #fff; padding: 10px;">Show</button>
+                  style="top: 040% !important; left: 45% !important; background-color: #a12c2f; color: #fff; padding: 10px;">দেখুন</button>
               </div>
               <iframe src="https://www.youtube.com/embed/Pyle8DNiv8A?autoplay=1" style="z-index: 999 !important;"
                 frameborder="0"
@@ -1206,10 +1221,117 @@
                   </div>
                 </div>
               </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="tab-pane fade" id="graphity" role="graphity" aria-labelledby="graphity-tab">
             <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-none">
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up">
                   <img src="./assets/img/abu-sayed.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded" />
@@ -1291,6 +1413,68 @@
           </div>
           <div class="tab-pane fade" id="longmarchToDhaka" role="tabpanel" aria-labelledby="longmarchToDhaka-tab">
             <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
+                <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up p-5 w-100 h-100"
+                  style="box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); border-radius: 40px !important; height: 400px !important;">
+                  <div class="d-flex justify-content-center align-items-center" style="border-radius: 40px;">
+                    <img src="./assets/img/1.jpg" class="img-fluid image-overlay-bottom-to-up-image rounded"
+                      style="border-radius: 40px !important; width: 95%; height: 95%;  margin-top: 2.5% !important; margin-left: 2.5% !important; height: 385px !important;" />
+                  </div>
+                  <div class="image-overlay-bottom-to-up-overlay">
+                    <div class="image-overlay-bottom-to-up-text">
+                      <h6>নাম : মোঃ মাহবুবুল হাসান</h6>
+                      <h6>স্থান: ঢাকা বিশ্ববিদ্যালয়</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-none">
               <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4">
                 <div class="image-wrapper aspect-ratio-16-9 image-overlay-bottom-to-up" style="height: 400px;">
                   <img src="./assets/img/abdullah-al-tahir.jpg"
@@ -1366,7 +1550,7 @@
             <span class="sitename">বাংলাদেশ ২.০</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Dhaka, Bangladesh</p>
+            <p>ঢাকা, বাংলাদেশ</p>
             <p class="mt-3"><strong>ফোন:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>ইমেইল:</strong> <span>info@example.com</span></p>
           </div>
