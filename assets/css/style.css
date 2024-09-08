@@ -42,8 +42,8 @@ body {
 }
 
 .line-primary {
-  border: 3px solid #d90429;
-  width: 150px;
+  border: 2px solid #d90429;
+  width: 100px;
 }
 .see-more-btn-primary {
   background-color: #a12c2f;
@@ -416,7 +416,7 @@ header .navbar-brand {
   object-fit: cover;
 }
 .all-shamonnoyk-list .title {
-  font-size: 52px;
+  font-size: 48px;
   font-family: "SolaimanLipi";
   font-weight: 600;
 }
@@ -508,7 +508,7 @@ header .navbar-brand {
   padding: 60px 0px;
 }
 .all-shahid-list .title {
-  font-size: 52px;
+  font-size: 48px;
   font-family: "SolaimanLipi";
   font-weight: 600;
 }
@@ -870,7 +870,7 @@ header .navbar-brand {
 /* history start */
 .history .swiper {
   width: 100%;
-  height: 610px;
+  height: 640px;
 }
 .history .history-width {
   width: 75%;
@@ -890,6 +890,7 @@ header .navbar-brand {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  height: 200px;
 }
 
 .history
@@ -985,7 +986,6 @@ header .navbar-brand {
   color: var(--white);
   line-height: 1.2;
   border-radius: 5px 0px 0px 5px;
-  width: 150px;
 }
 .history .card .tiem-and-details {
   font-size: 16px;
@@ -1527,7 +1527,7 @@ header .navbar-brand {
 
   /* history */
   .history .history-width {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -1634,7 +1634,7 @@ header .navbar-brand {
 
   /* history */
   .history .history-width {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -1750,7 +1750,7 @@ header .navbar-brand {
 
   /* history */
   .history .history-width {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -1877,7 +1877,7 @@ header .navbar-brand {
 
   /* history */
   .history .history-width {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -1998,6 +1998,6 @@ header .navbar-brand {
   /* video container end */
   /* history */
   .history .history-width {
-    width: 100%;
+    width: 70%;
   }
 }

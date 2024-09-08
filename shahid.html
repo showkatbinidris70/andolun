@@ -27,6 +27,113 @@
 
   <title>বাংলাদেশ ২.০</title>
 
+  <style>
+    ._card {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-clip: border-box;
+    }
+
+    .grid_box {
+      padding: 0px 12px;
+      margin-bottom: 25px;
+    }
+
+    .service_post.style_four {
+      position: relative;
+      padding: 10px;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .09);
+      background: #fff;
+      z-index: 0;
+      border-radius: 10px;
+      transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+    }
+
+    .service_post.style_four::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 50px;
+      left: 0;
+      bottom: 0;
+      background: #a12c2f;
+      opacity: 0;
+      transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      top: 100%;
+      z-index: 1;
+    }
+
+    .service_post.style_four .image_box {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .service_post.style_four .image_box img {
+      height: 300px;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .service_post.style_four:hover::before {
+      opacity: 1;
+      top: 50px;
+    }
+
+    .service_post.style_four::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 50px;
+      left: 0;
+      bottom: 0;
+      background: #a12c2f;
+      opacity: 0;
+      transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      top: 100%;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .09);
+      z-index: 1;
+    }
+
+    .service_post.style_four:hover::after {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .service_post.style_four::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      left: 38px;
+      top: 40px;
+      background: #f0f3f9;
+      transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, .09);
+      z-index: -1;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -49,6 +156,7 @@
       </div>
     </div>
   </section>
+
   <header class="sticky-top bg-white">
     <div class="container">
       <div class="row">
@@ -114,95 +222,54 @@
   <section class="breakcrumb">
     <div class="container">
       <div class="row">
-        <h2 class="text-white fs-2">আমাদের শহীদগন</h2>
+        <h2 class="text-white fs-2">বৈষম্যবিরোধী ছাত্র আন্দোলনের শহীদগন</h2>
         <p class="text-white fs-5 py-2">হোম <i class="fa-solid fa-angles-right"></i> শহীদ</p>
       </div>
     </div>
   </section>
 
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section light-background" style="margin: 60px 0px;">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>যোগাযোগ</h2>
-      <div><span>সাহায্য প্রয়োজন?</span> <span class="description-title">যোগাযোগ করুন</span></div>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row gy-4">
-        <div class="col-lg-6 ">
-          <div class="row gy-4">
-
-            <div class="col-lg-12">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                data-aos-delay="200">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3>ঠিকানা</h3>
-                <p>ঢাকা, বাংলাদেশ</p>
+  <section>
+    <div class="container">
+      <div class="mt-5 mb-3">
+        <p class="fs-4 text-start">বৈষম্যবিরোধী ছাত্র আন্দোলনের </p>
+        <h2 class="text-dark title text-start">শহীদগন</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="grid_box _card">
+            <div class="service_post style_four">
+              <div class="image_box">
+                <img src="./assets/img/abu-sayed.jpg" class="img-fluid rounded" alt="" srcset="">
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                data-aos-delay="300">
-                <i class="fa-solid fa-phone"></i>
-                <h3>কল করুন</h3>
-                <p>+১ ৫৫৮৯ ৫৫৪৮৮ ৫৫</p>
+              <div class="card-info">
+                <h5 class="text-dark mx-3 py-1">নাম: আবু সাইদ</h5>
+                <h6 class="text-dark mx-3"> প্রতিষ্ঠান: বেগম রোকেয়া বিশ্ববিদ্যালয়</h6>
+                <h6 class="text-dark mx-3"> স্থান: রংপুর</h6>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                data-aos-delay="400">
-                <i class="fa-regular fa-envelope"></i>
-                <h3>ইমেইল করুন</h3>
-                <p>info@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="grid_box _card">
+            <div class="service_post style_four">
+              <div class="image_box">
+                <img src="./assets/img/abu-jafor.jpg" class="img-fluid rounded" alt="" srcset="">
               </div>
-            </div><!-- End Info Item -->
-
+              <div class="card-info">
+                <h5 class="text-dark mx-3 py-1">নাম: আবু জাফর</h5>
+                <h6 class="text-dark mx-3"> প্রতিষ্ঠান: </h6>
+                <h6 class="text-dark mx-3"> স্থান:</h6>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-            <div class="row gy-4">
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="আপনার নাম" required="">
-              </div>
-
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="আপনার ইমেইল" required="">
-              </div>
-
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="বিষয়" required="">
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="4" placeholder="বার্তা" required=""></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <button type="submit"> বার্তা পাঠান</button>
-              </div>
-
-            </div>
-          </form>
-        </div><!-- End Contact Form -->
 
       </div>
-
     </div>
-
-  </section><!-- /Contact Section -->
+  </section>
 
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
