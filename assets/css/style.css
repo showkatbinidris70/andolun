@@ -2000,4 +2000,14 @@ header .navbar-brand {
   .history .history-width {
     width: 70%;
   }
+
+  /* ----------------------------------------- */
+
+  .img-text-width {
+    width: 200px;
+  }
+
+  .img-text-height {
+    width: 180px;
+  }
 }
