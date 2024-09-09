@@ -21,6 +21,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -181,15 +183,16 @@
     </div>
   </section>
 
-  <section class="mission-vision-success">
+  <section class="mission-vision-success" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4 mb-xl-0">
-          <div class="card card-item border-0 px-3 py-5 w-100 h-100 ">
+          <div class="card card-item border-0 px-3 py-5 w-100 h-100 " data-aos="fade-right" data-aos-duration="2000">
             <a href="#">
               <div class="item">
                 <div class="icon">
-                  <img src="./assets/img/service-icon-01.png" alt="">
+                  <!-- <img src="./assets/img/service-icon-01.png" alt=""> -->
+                  <i class="fa-solid fa-rocket text-white" style=" font-size: 64px;"></i>
                 </div>
                 <div class="down-content">
                   <h4>উদ্দেশ্য</h4>
@@ -206,7 +209,8 @@
             <a href="#">
               <div class="item">
                 <div class="icon">
-                  <img src="./assets/img/service-icon-02.png" alt="">
+                  <!-- <img src="./assets/img/service-icon-02.png" alt=""> -->
+                  <i class="fa-regular fa-eye text-white" style=" font-size: 64px;"></i>
                 </div>
                 <div class="down-content">
                   <h4>লক্ষ্য</h4>
@@ -219,11 +223,12 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mb-4 mb-xl-0">
-          <div class="card card-item border-0 px-3 py-5 w-100 h-100 ">
+          <div class="card card-item border-0 px-3 py-5 w-100 h-100 " data-aos="fade-left" data-aos-duration="2000">
             <a href="#">
               <div class="item">
                 <div class="icon">
-                  <img src="./assets/img/service-icon-03.png" alt="">
+                  <!-- <img src="./assets/img/service-icon-03.png" alt=""> -->
+                  <i class="fa-regular fa-circle-check text-white" style="font-size: 64px;"></i>
                 </div>
                 <div class="down-content">
                   <h4>সাফল্য</h4>
@@ -240,7 +245,7 @@
   </section>
 
   <!-- counter Section -->
-  <section class="counter-section">
+  <section class="counter-section" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-4 mb-xl-0">
@@ -284,7 +289,7 @@
     </div>
   </section>
 
-  <section class="all-shamonnoyk-list">
+  <section class="all-shamonnoyk-list" data-aos="fade-up">
     <div class="container">
       <p class="text-center fs-4">বৈষম্যবিরোধী ছাত্র আন্দোলনের </p>
       <h2 class="text-dark text-center title">সমন্বয়কগন</h2>
@@ -459,7 +464,7 @@
     </div>
   </section>
 
-  <section class="all-shahid-list">
+  <section class="all-shahid-list" data-aos="fade-up">
     <div class="container">
       <p class="text-center fs-4">বৈষম্যবিরোধী ছাত্র আন্দোলনের </p>
       <h2 class="text-center fs-1 fw-bold">শহিদ গন</h2>
@@ -783,7 +788,7 @@
     </div>
   </section>
 
-  <div class="history">
+  <div class="history" data-aos="fade-up">
     <div class="container">
       <!-- <h2 class="text-white text-center title mb-2">আন্দোলনের ইতিহাস</h2> -->
       <p class="text-center fs-4 text-white">বৈষম্যবিরোধী ছাত্র আন্দোলনের </p>
@@ -1074,7 +1079,7 @@
     </div>
   </div>
 
-  <section class="upcoming-events">
+  <section class="upcoming-events" data-aos="fade-up">
     <div class="container text-center">
       <h2 class="text-dark text-center title">আসন্ন ঘটনা</h2>
       <div class="d-flex justify-content-center mb-4">
@@ -1300,7 +1305,7 @@
 
 
   <!-- video container start -->
-  <section class="show-video">
+  <section class="show-video" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 col-xxl-9 mb-4 mb-lg-0">
@@ -1373,7 +1378,7 @@
 
   <!-- light box video end -->
 
-  <section class="photo-gallery">
+  <section class="photo-gallery" data-aos="fade-up">
     <div class="container">
       <h2 class="text-center fs-1 fw-bold">ছবি গ্যালারী</h2>
       <div class="d-flex justify-content-center mb-2">
@@ -2189,6 +2194,10 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script src="./assets/js/slider.js"></script>
 </body>

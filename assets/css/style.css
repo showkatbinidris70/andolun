@@ -1288,11 +1288,12 @@ header .navbar-brand {
 .photo-gallery .image-overlay-bottom-to-up-text {
   color: white;
   position: absolute;
-  top: 90%;
-  left: 35%;
-  -webkit-transform: translate(-50%, -50%);
+  /* top: 90%; */
+  left: 20px;
+  bottom: 20px;
+  /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   text-align: start;
   font-family: "SolaimanLipi";
   font-weight: 400;
