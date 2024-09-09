@@ -72,6 +72,28 @@ body {
   background-blend-mode: multiply;
 }
 /* top header start */
+
+/* back to top start */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a12c2f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #af2126;
+}
+/* back to top end */
 .top-header {
   background-color: #a12c2f;
 }

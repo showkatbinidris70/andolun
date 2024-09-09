@@ -171,9 +171,6 @@ var x = setInterval(function () {
 }, 1000);
 // upcoming event end
 
-// aos initialization
-AOS.init();
-
 // lightbox video start
 // Function to reveal lightbox and adding YouTube autoplay
 
@@ -204,3 +201,26 @@ function hideVideoTwo(div, video_id) {
   document.getElementById(div).style.display = "none";
 }
 // lightbox video end
+
+// back to top start
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// back to top end
+
+// aos initialization
+AOS.init();
