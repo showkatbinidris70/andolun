@@ -12,24 +12,25 @@ function showPage() {
 
 // hero slider start
 var swiper = new Swiper(".heroSwiperSwiper", {
-  cssMode: true,
   loop: true,
-  speed: 5000,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
 });
 // hero slider end
+
+// latest news start
+var swiper = new Swiper(".letest-new", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  freeMode: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  mousewheel: true,
+});
+// latest news end
 
 // video section start
 function showVideo() {
