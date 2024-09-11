@@ -37,27 +37,28 @@ body {
   /* color */
   --black: #000000;
   --white: #ffffff;
-  --red: #a12c2f;
+  --red: #bc2126;
+  --red-secondary: #bd1616;
   --green: #008000;
 }
 a {
   color: #000;
 }
 .line-primary {
-  border: 2px solid #d90429;
+  border: 2px solid var(--red);
   width: 100px;
 }
 .see-more-btn-primary {
-  background-color: #a12c2f;
+  background-color: var(--red);
   border-radius: 6px;
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-weight: 400;
 }
 .see-more-btn-primary:hover {
   background-color: #003e1f;
   border-radius: 6px;
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-weight: 400;
 }
@@ -85,19 +86,19 @@ a {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #a12c2f;
-  color: white;
+  background-color: var(--red);
+  color: var(--white);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #af2126;
+  background-color: var(--red);
 }
 /* back to top end */
 .top-header {
-  background-color: #a12c2f;
+  background-color: var(--red);
 }
 .top-header .message {
   font-size: 18px;
@@ -112,16 +113,16 @@ a {
   color: #000;
 }
 .top-header .cta-btn:hover {
-  background-color: #bd1616;
-  color: #ffffff;
+  background-color: var(--red-secondary);
+  color: var(--white);
   border-radius: 4px;
   padding: 2px;
 }
 /* top header end */
 /* header start */
 header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #a12c2f;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--red);
 }
 header .navbar ul li a {
   font-size: 20px;
@@ -192,7 +193,7 @@ header .navbar-brand {
   max-height: 30rem;
 }
 .hero-section .our-demands .card {
-  background-color: #bd1616;
+  background-color: var(--red-secondary);
   /* background-image: url("../img/cta-bg.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
@@ -211,10 +212,10 @@ header .navbar-brand {
   -webkit-box-orient: vertical;
 }
 .hero-section .swiper-button-next {
-  color: red;
+  color: var(--red);
 }
 .hero-section .swiper-button-prev {
-  color: red;
+  color: var(--red);
 }
 .hero-section .hero-img-overlay {
   position: absolute;
@@ -246,7 +247,7 @@ header .navbar-brand {
   position: relative;
   padding: 10px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
-  background: #fff;
+  background: var(--white);
   z-index: 0;
   border-radius: 10px;
   transition: all 0.6s ease-in-out;
@@ -262,7 +263,7 @@ header .navbar-brand {
   height: 50px;
   left: 0;
   bottom: 0;
-  background: #a12c2f;
+  background: var(--red);
   opacity: 0;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -298,7 +299,7 @@ header .navbar-brand {
   height: 50px;
   left: 0;
   bottom: 0;
-  background: #a12c2f;
+  background: var(--red);
   opacity: 0;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -345,7 +346,7 @@ header .navbar-brand {
 }
 
 .floating-btn .our-visitors {
-  background-color: #a12c2f;
+  background-color: var(--red);
   font-family: "SolaimanLipi";
   font-weight: 400;
   font-size: 14px;
@@ -354,7 +355,7 @@ header .navbar-brand {
 
 /* scrolling-news start */
 .scrolling-news {
-  background-color: #a12c2f;
+  background-color: var(--red);
   background: linear-gradient(
     90deg,
     rgba(252, 9, 9, 1) 0%,
@@ -366,7 +367,7 @@ header .navbar-brand {
   font-size: 24px;
   font-family: "SolaimanLipi";
   font-weight: 400;
-  /* background-color: #a12c2f; */
+  /* background-color: var(--red); */
   color: var(--white);
 }
 .scrolling-news .marq .marque-text {
@@ -397,7 +398,7 @@ header .navbar-brand {
   position: relative;
   text-align: center;
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 5px;
   padding-top: 32px;
   padding-bottom: 35px;
@@ -550,7 +551,7 @@ header .navbar-brand {
 
 .all-shamonnoyk-list .swiper-slide {
   font-size: 18px;
-  background: #fff;
+  background: var(--white);
   height: calc((100% - 30px) / 2) !important;
 }
 
@@ -606,7 +607,7 @@ header .navbar-brand {
 } */
 
 .all-shamonnoyk-list .img-overlay {
-  color: white;
+  color: var(--white);
   position: absolute;
   text-align: start;
   font-family: "SolaimanLipi";
@@ -637,7 +638,7 @@ header .navbar-brand {
 }
 
 .all-shamonnoyk-list .card-info {
-  color: white;
+  color: var(--white);
   font-size: 20px;
   position: absolute;
   left: 35%;
@@ -732,7 +733,7 @@ header .navbar-brand {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
   letter-spacing: 1px;
 }
 
@@ -742,12 +743,12 @@ header .navbar-brand {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
+  color: var(--white);
   letter-spacing: 1px;
 }
 
 .main-banner .caption p {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   max-width: 570px;
 }
@@ -758,8 +759,8 @@ header .navbar-brand {
 
 .main-button-red a {
   font-size: 13px;
-  color: #fff;
-  background-color: #a12c2f;
+  color: var(--white);
+  background-color: var(--red);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -785,7 +786,7 @@ header .navbar-brand {
   background-position: center center;
   border-radius: 20px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   /* padding: 40px; */
 }
 .mission-vision-success .item .icon {
@@ -798,7 +799,7 @@ header .navbar-brand {
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 600;
-  color: white;
+  color: var(--white);
   font-family: "SolaimanLipi";
   line-height: 1.2;
   overflow: hidden;
@@ -807,7 +808,7 @@ header .navbar-brand {
   -webkit-box-orient: vertical;
 }
 .mission-vision-success .item p {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-family: "SolaimanLipi";
   line-height: 1.2;
@@ -834,7 +835,7 @@ header .navbar-brand {
   background-blend-mode: multiply; */
 }
 .our-heros h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 60px;
   font-family: "SolaimanLipi";
   font-weight: 600;
@@ -912,7 +913,7 @@ header .navbar-brand {
 }
 
 .our-heros .image-overlay-bottom-to-up-text {
-  color: white;
+  color: var(--white);
   font-size: 20px;
   position: absolute;
   bottom: 10px;
@@ -925,14 +926,14 @@ header .navbar-brand {
   text-align: center; */
 }
 .our-heros .image-overlay-bottom-to-up-text h5 {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-family: "SolaimanLipi";
   font-weight: 600;
   line-height: 1.5;
 }
 .our-heros .image-overlay-bottom-to-up-text h6 {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
   font-family: "SolaimanLipi";
   font-weight: 400;
@@ -1022,7 +1023,7 @@ header .navbar-brand {
 .history .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--white);
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1094,17 +1095,17 @@ header .navbar-brand {
 .history .swiper-button-next::after {
   content: "\f107";
   font-size: 64px;
-  color: white;
+  color: var(--white);
 }
 
 .history .swiper-button-prev::after {
   content: "\f106";
   font-size: 64px;
-  color: white;
+  color: var(--white);
 }
 
 .history h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 60px;
   font-family: "SolaimanLipi";
   font-weight: 600;
@@ -1240,7 +1241,7 @@ header .navbar-brand {
 .latest-news .date {
   height: 40px;
   width: 70px;
-  background-color: #a12c2f;
+  background-color: var(--red);
   border-right: 3px solid #000;
 }
 
@@ -1278,14 +1279,14 @@ header .navbar-brand {
 .latest-news .icon-btn {
   border-radius: 50%;
   top: 60%;
-  color: #fff;
+  color: var(--white);
   right: -7px;
-  background-color: #a12c2f;
+  background-color: var(--red);
 }
 
 .latest-news .icon-btn:hover {
   background-color: #003e1f;
-  color: #fff;
+  color: var(--white);
 }
 .latest-news .img-height {
   height: 310px;
@@ -1317,7 +1318,7 @@ header .navbar-brand {
   /* object-fit: fill; */
   object-fit: cover;
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  object-position: 45% 20%
+  object-position: 45% 20%;
 }
 
 .grid-gallery .grid-item:hover img {
@@ -1488,7 +1489,7 @@ header .navbar-brand {
 .lightbox-close {
   border: none;
   background-color: transparent;
-  color: #db1111;
+  color: var(--red);
   position: absolute;
   top: 10px;
   right: 20px;
@@ -1510,14 +1511,14 @@ header .navbar-brand {
 }
 
 .photo-gallery .nav-link.active {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--red);
   background-color: rgb(161, 44, 47);
-  color: #fff !important;
+  color: var(--white) !important;
   border-radius: 4px;
 }
 
 .photo-gallery .nav-link:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--red);
   border-radius: 4px;
   background-color: rgba(222, 62, 62, 0.108);
   color: #000 !important;
@@ -1691,14 +1692,14 @@ header .navbar-brand {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 24px 0 30px 0;
 }
 
 .contact .info-item i {
   font-size: 20px;
-  color: #a12c2f;
+  color: var(--red);
   width: 56px;
   height: 56px;
   font-size: 24px;
@@ -1708,12 +1709,12 @@ header .navbar-brand {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  border: 2px dotted color-mix(in srgb, #a12c2f, transparent 40%);
+  border: 2px dotted color-mix(in srgb, var(--red), transparent 40%);
 }
 
 .contact .info-item h3 {
   font-size: 20px;
-  color: color-mix(in srgb, #a12c2f, transparent 20%);
+  color: color-mix(in srgb, var(--red), transparent 20%);
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
@@ -1747,13 +1748,14 @@ header .navbar-brand {
   border-radius: 0;
   color: var(--default-color);
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  /* border-color: color-mix(in srgb, var(--default-color), transparent 80%); */
+  border-radius: 4px;
 }
 
 .contact .php-email-form input[type="text"]:focus,
 .contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: var(--red);
 }
 
 .contact .php-email-form input[type="text"]::placeholder,
@@ -1763,8 +1765,8 @@ header .navbar-brand {
 }
 
 .contact .php-email-form button[type="submit"] {
-  color: #fff;
-  background: #a12c2f;
+  color: var(--white);
+  background: var(--red);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1784,7 +1786,7 @@ header .navbar-brand {
 .php-email-form .error-message {
   display: none;
   background: #df1529;
-  color: #ffffff;
+  color: var(--white);
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -1793,7 +1795,7 @@ header .navbar-brand {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
+  color: var(--white);
   background: #059652;
   text-align: center;
   padding: 15px;
@@ -1831,11 +1833,39 @@ header .navbar-brand {
   }
 }
 
+/* info-form start */
+.info-form {
+  margin: 60px 0px;
+}
+.info-form label {
+  font-weight: 600;
+  color: #666;
+  padding-left: 10px;
+}
+
+.info-form .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.29);
+  opacity: 1;
+}
+
+.info-form .box8 {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07);
+  transition: all 0.15s ease;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 0;
+}
+
+.info-form .mx-t3 {
+  margin-top: -3rem;
+}
+/* info-form end */
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: #fff;
+  color: var(--white);
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
@@ -1848,7 +1878,7 @@ header .navbar-brand {
   background-blend-mode: multiply;
 }
 .footer a {
-  color: #ffffff;
+  color: var(--white);
 }
 .footer .footer-top {
   padding-top: 50px;
@@ -1951,7 +1981,7 @@ header .navbar-brand {
   padding: 6px 8px;
   position: relative;
   border-radius: 4px;
-  border: 1px solid color-mix(in srgb, #fff, transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--white), transparent 80%);
   display: flex;
   background-color: rgba(72, 56, 56, 0.33);
   transition: 0.3s;
