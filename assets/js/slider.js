@@ -145,21 +145,38 @@ var historySwiperSlider = new Swiper(".historySwiperSlider", {
 var countdownDate = new Date("Dec 31, 2024 10:00:00").getTime();
 
 // Update the countdown every 1 second
+
+function toBengaliNumerals(number) {
+  const englishToBengali = {
+    0: "০",
+    1: "১",
+    2: "২",
+    3: "৩",
+    4: "৪",
+    5: "৫",
+    6: "৬",
+    7: "৭",
+    8: "৮",
+    9: "৯",
+  };
+  return number.toString().replace(/\d/g, (digit) => englishToBengali[digit]);
+}
+
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countdownDate - now;
 
   // Calculate days, hours, minutes, and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 6 * 60 * 24)) / (1000 * 60 * 60));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("days").innerHTML = toBengaliNumerals(days);
+  document.getElementById("hours").innerHTML = toBengaliNumerals(hours);
+  document.getElementById("minutes").innerHTML = toBengaliNumerals(minutes);
+  document.getElementById("seconds").innerHTML = toBengaliNumerals(seconds);
 
   // If the countdown is finished
   if (distance < 0) {
@@ -205,6 +222,51 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // back to top end
+
+// counter up  start
+const englishToBengali = {
+  0: "০",
+  1: "১",
+  2: "২",
+  3: "৩",
+  4: "৪",
+  5: "৫",
+  6: "৬",
+  7: "৭",
+  8: "৮",
+  9: "৯",
+};
+
+// Function to convert English digits to Bengali digits
+function convertToBengali(num) {
+  return num
+    .toString()
+    .split("")
+    .map((digit) => englishToBengali[digit] || digit)
+    .join("");
+}
+
+const duration = 2000; // total duration for all counters to finish in milliseconds
+
+document.querySelectorAll(".count").forEach(function (item) {
+  let startNumber = 0;
+  const targetNumber = parseInt(item.getAttribute("data-number"), 10);
+  const increment = targetNumber / (duration / 10); // adjusts the speed
+
+  function counterUp() {
+    startNumber += increment;
+
+    if (startNumber >= targetNumber) {
+      item.innerHTML = convertToBengali(targetNumber); // Ensure it ends exactly at the target number
+      clearInterval(stop);
+    } else {
+      item.innerHTML = convertToBengali(Math.floor(startNumber));
+    }
+  }
+
+  const stop = setInterval(counterUp, 10); // update every 10ms for a smooth animation
+});
+// counter up  end
 
 // aos initialization
 AOS.init();

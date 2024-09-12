@@ -99,26 +99,22 @@ a {
 }
 /* back to top end */
 .top-header {
-  /* background-color: var(--primary-color); */
+  background-color: var(--primary-color);
 }
 .top-header .message {
   font-size: 18px;
   font-weight: 400;
   font-family: "SolaimanLipi";
-  /* color: #000; */
-  color: rgba(0, 0, 0, 0.55);
+  color: #000;
 }
 .top-header .cta-btn {
   font-size: 18px;
   font-weight: 400;
   font-family: "SolaimanLipi";
-  /* color: #000; */
-  color: rgba(0, 0, 0, 0.55);
-  background-color: #f3f0f0;
+  color: #000;
 }
 .top-header .cta-btn:hover {
-  /* background-color: var(--primary-color-secondary); */
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-secondary);
   color: var(--white);
   border-radius: 4px;
   padding: 2px;
@@ -138,10 +134,6 @@ header .navbar-brand {
   font-size: 30px;
   font-family: "SolaimanLipi";
   font-weight: 500;
-}
-
-header .navbar-light .navbar-nav .nav-link {
-color: #000;
 }
 
 .hero-section .image-wrapper {
@@ -371,7 +363,6 @@ color: #000;
     rgba(0, 128, 0, 1) 74%
   );
   height: 40px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.856), 0 2px 4px rgba(0, 0, 0, 0.864);
 }
 .scrolling-news .title {
   font-size: 24px;
@@ -379,14 +370,12 @@ color: #000;
   font-weight: 400;
   /* background-color: var(--primary-color); */
   color: var(--white);
-  /* color: black; */
 }
 .scrolling-news .marq .marque-text {
   font-size: 20px;
   font-family: "SolaimanLipi";
   font-weight: 400;
   line-height: 1.8;
-  color: white;
 }
 /* scrolling-news end */
 
