@@ -138,10 +138,14 @@ header .navbar-brand {
   font-size: 30px;
   font-family: "SolaimanLipi";
   font-weight: 500;
+  background: green;
+  background: linear-gradient(to right, #cf1512 0%, green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header .navbar-light .navbar-nav .nav-link {
-color: #000;
+  color: #000;
 }
 
 .hero-section .image-wrapper {
