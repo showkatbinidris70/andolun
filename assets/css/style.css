@@ -1390,12 +1390,14 @@ header .navbar-light .navbar-nav .nav-link {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  font-size: 25px;
 }
 .latest-news .sub-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-size: 16px;
 }
 
 .latest-news .icon-btn {
