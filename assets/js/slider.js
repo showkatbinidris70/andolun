@@ -13,6 +13,19 @@ function showPage() {
 // hero slider start
 var swiper = new Swiper(".heroSwiperSwiper", {
   loop: true,
+  zoom: true,
+  effect: "fade",
+  // spaceBetween: 30,
+  fadeEffect: { crossFade: true },
+  virtualTranslate: true,
+  speed: 3000,
+  autoplayDisableOnInteraction: true,
+  slidersPerView: 1,
+  effect: "fade",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -30,7 +43,20 @@ var swiper = new Swiper(".letest-new", {
   },
   mousewheel: true,
 });
+
 // latest news end
+
+// history scrolling slider start
+var swiper = new Swiper(".history-scrolling-slider", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  freeMode: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  mousewheel: true,
+});
+// history scrolling slider end
 
 // video section start
 function showVideo() {
