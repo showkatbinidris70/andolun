@@ -121,10 +121,8 @@
       </div>
     </div>
   </section>
-  <style>
+  <!-- <style>
     .info-form {
-      background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-      /* linear-gradient(90deg, rgba(252, 9, 9, 1) 0%, rgb(0, 62, 31) 40%); */
       background: linear-gradient(to bottom, rgba(170, 10, 10, 0.653) 0%, rgba(0, 62, 31, 0.711) 70% 100%)
     }
 
@@ -136,7 +134,7 @@
       border-radius: 20px;
       height: 55px;
     }
-  </style>
+  </style> -->
 
   <section class="info-form">
     <div class="container mt-3">
@@ -151,7 +149,7 @@
       </div>
       <h2 class="text-center mb-3 text-white">শহীদদের তথ্য ফর্ম</h2>
       <div class="d-flex justify-content-center">
-        <div class="w-75">
+        <div class="info-form-width">
           <form class="" style="border-radius: 30px;">
             <div class="row jumbotron box8 px-4 py-5">
               <div class="col-sm-6">
@@ -183,11 +181,29 @@
                   <input type="file" class="form-control" name="fname" id="name-f" placeholder=" মাতার নাম" required>
                 </div>
               </div> -->
+
               <div class="col-sm-6 form-group mb-3">
                 <label for="name-f">মাতার নাম</label>
                 <input type="text" class="form-control" name="fname" id="name-f" placeholder=" মাতার নাম" required>
               </div>
-
+              <div class="col-sm-6 form-group mb-3">
+                <label for="sex">লিঙ্গ</label>
+                <div class="d-flex gap-3 mt-2">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">পুরুষ</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio2">মহিলা</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio3">
+                      অন্যান্য</label>
+                  </div>
+                </div>
+              </div>
               <div class="col-sm-6 form-group mb-3">
                 <label for="name-l"> বয়স</label>
                 <input type="number" class="form-control" name="lname" id="name-l" placeholder=" বয়স" required>
@@ -226,29 +242,9 @@
                 <label for="name-l"> যোগাযোগের নম্বর</label>
                 <input type="number" class="form-control" name="lname" id="name-l" placeholder=" যোগাযোগের নম্বর">
               </div>
-              <div class="col-sm-6 form-group mb-3">
+              <div class="col-sm-6 form-group mb-3 mt-3">
                 <label for="Image">সংযুক্তি ( মৃত্যু সনদ / অন্যান্য)</label>
                 <input type="file" name="fname" id="name-f" placeholder="সংযুক্তি ( মৃত্যু সনদ / অন্যান)" required>
-              </div>
-
-
-              <div class="col-sm-6 form-group mb-3">
-                <label for="sex">লিঙ্গ</label>
-                <div class="d-flex gap-3 mt-2">
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                    <label class="form-check-label" for="radio1">পুরুষ</label>
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
-                    <label class="form-check-label" for="radio2">মহিলা</label>
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
-                    <label class="form-check-label" for="radio3">
-                      অন্যান্য</label>
-                  </div>
-                </div>
               </div>
               <div class="form-group mb-0 text-end">
                 <button class="btn see-more-btn-primary float-right"> জমা দিন</button>
@@ -261,33 +257,6 @@
     </div>
   </section>
 
-  <script>
-    const imageInput = document.getElementById('imageInput');
-    const imagePreviewContainer = document.getElementById('imagePreviewContainer');
-    const imagePreview = document.getElementById('imagePreview');
-    const changeImageButton = document.getElementById('changeImageButton');
-
-    // Event listener to handle image selection
-    imageInput.addEventListener('change', function (event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          imagePreview.src = e.target.result;
-          imagePreviewContainer.style.display = 'block'; // Show the image preview
-        };
-        reader.readAsDataURL(file);
-      }
-    });
-
-    // Event listener to handle change image button
-    changeImageButton.addEventListener('click', function () {
-      imageInput.value = ''; // Clear the input field
-      imagePreview.src = ''; // Remove the previous image
-      imagePreviewContainer.style.display = 'none'; // Hide the image preview
-      imageInput.click(); // Trigger the file input to open again
-    });
-  </script>
 
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">

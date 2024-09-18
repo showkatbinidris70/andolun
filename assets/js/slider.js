@@ -305,5 +305,33 @@ document.querySelectorAll(".count").forEach(function (item) {
 });
 // counter up  end
 
+// information form
+
+const imageInput = document.getElementById("imageInput");
+const imagePreviewContainer = document.getElementById("imagePreviewContainer");
+const imagePreview = document.getElementById("imagePreview");
+const changeImageButton = document.getElementById("changeImageButton");
+
+// Event listener to handle image selection
+imageInput.addEventListener("change", function (event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      imagePreview.src = e.target.result;
+      imagePreviewContainer.style.display = "block"; // Show the image preview
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+// Event listener to handle change image button
+changeImageButton.addEventListener("click", function () {
+  imageInput.value = ""; // Clear the input field
+  imagePreview.src = ""; // Remove the previous image
+  imagePreviewContainer.style.display = "none"; // Hide the image preview
+  imageInput.click(); // Trigger the file input to open again
+});
+
 // aos initialization
 AOS.init();

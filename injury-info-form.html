@@ -121,47 +121,75 @@
     </div>
   </section>
 
-  <style>
-    .info-form {
-      /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
-      /* linear-gradient(90deg, rgba(252, 9, 9, 1) 0%, rgb(0, 62, 31) 40%); */
-      /* background: linear-gradient(to bottom, rgba(170, 10, 10, 0.653) 0%, rgba(0, 62, 31, 0.711) 70% 100%) */
-    }
-
-    .info-form form label {
-      color: #000;
-    }
-
-    .info-form form .form-control {
-      border-radius: 30px;
-      height: 55px;
-    }
-  </style>
-
   <section class="info-form">
     <div class="container mt-3">
-      <h2 class="text-center mb-3">আহত ব্যাক্তির তথ্য ফর্ম</h2>
+      <div class="d-flex justify-content-center">
+        <div class="info-form-width">
+          <p class="text-center text-white pb-2">বৈষম্য বিরোধী ছাত্র আন্দোলনে যারা আহত হয়েছেন তাদের তথ্য সংগ্রহ করা
+            হচ্ছে, আপনারা
+            এখানে আহতদের তথ্য দিয়ে
+            জমা
+            দিন </p>
+        </div>
+      </div>
+      <h2 class="text-center mb-3 text-white">আহত ব্যাক্তির তথ্য ফর্ম</h2>
       <div class="d-flex justify-content-center">
         <div class="w-75">
           <form>
-            <div class="row jumbotron box8 p-4">
-              <div class="col-sm-6 form-group mb-3">
-                <label for="name-f">আহত ব্যাক্তির নাম</label>
-                <input type="text" class="form-control" name="fname" id="name-f" placeholder="আহত ব্যাক্তির নাম"
-                  required>
+            <div class="row jumbotron box8 px-4 py-5">
+              <div class="col-sm-6">
+                <div class="col-sm-12 form-group mb-3">
+                  <label for="name-f">আহত ব্যাক্তির নাম</label>
+                  <input type="text" class="form-control" name="fname" id="name-f" placeholder="আহত ব্যাক্তির নাম"
+                    required>
+                </div>
+                <div class="col-sm-12 form-group mb-3">
+                  <label for="name-f">পিতার নাম</label>
+                  <input type="text" class="form-control" name="fname" id="name-f" placeholder=" পিতার নাম" required>
+                </div>
               </div>
+
+
               <div class="col-sm-6 form-group mb-3">
-                <label for="name-f">পিতার নাম</label>
-                <input type="text" class="form-control" name="fname" id="name-f" placeholder=" পিতার নাম" required>
+                <div class="col-sm-12">
+                  <label for="image">আহত ব্যাক্তির ছবি</label>
+                  <br />
+                  <input type="file" id="imageInput" accept="image/*" required>
+                  <div id="imagePreviewContainer" style="display:none;">
+                    <button id="changeImageButton" class="btn"> <img id="imagePreview" src="" alt="Selected Image"
+                        class="rounded" style="width:100px; height:100px" /></button>
+                  </div>
+                </div>
               </div>
+
+              <!-- <div class="col-sm-6 form-group mb-3">
+                <label for="Image">আহত ব্যাক্তির ছবি</label>
+                <br />
+                <input type="file" class="" name="fname" id="name-f" placeholder=" মাতার নাম" required>
+              </div> -->
+
+
               <div class="col-sm-6 form-group mb-3">
                 <label for="name-f">মাতার নাম</label>
                 <input type="text" class="form-control" name="fname" id="name-f" placeholder=" মাতার নাম" required>
               </div>
-              <div class="col-sm-6 form-group mb-3">
-                <label for="Image">আহত ব্যাক্তির ছবি</label>
-                <br/>
-                <input type="file" class="" name="fname" id="name-f" placeholder=" মাতার নাম" required>
+              <div class="col-sm-6 form-group my-3">
+                <label for="sex">লিঙ্গ</label>
+                <div class="d-flex gap-3 mt-2">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">পুরুষ</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio2">মহিলা</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio3">
+                      অন্যান্য</label>
+                  </div>
+                </div>
               </div>
               <div class="col-sm-6 form-group mb-3">
                 <label for="name-l"> বয়স</label>
@@ -202,24 +230,7 @@
 
 
 
-              <div class="col-sm-6 form-group mb-3">
-                <label for="sex">লিঙ্গ</label>
-                <div class="d-flex gap-3 mt-2">
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                    <label class="form-check-label" for="radio1">পুরুষ</label>
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
-                    <label class="form-check-label" for="radio2">মহিলা</label>
-                  </div>
-                  <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
-                    <label class="form-check-label" for="radio3">
-                      অন্যান্য</label>
-                  </div>
-                </div>
-              </div>
+
               <div class="form-group mb-0 text-end">
                 <button class="btn see-more-btn-primary float-right">জমা দিন</button>
               </div>
