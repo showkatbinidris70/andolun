@@ -305,6 +305,9 @@ document.querySelectorAll(".count").forEach(function (item) {
 });
 // counter up  end
 
+// aos initialization
+AOS.init();
+
 // information form
 
 const imageInput = document.getElementById("imageInput");
@@ -332,6 +335,3 @@ changeImageButton.addEventListener("click", function () {
   imagePreviewContainer.style.display = "none"; // Hide the image preview
   imageInput.click(); // Trigger the file input to open again
 });
-
-// aos initialization
-AOS.init();
