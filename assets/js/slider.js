@@ -46,6 +46,17 @@ var swiper = new Swiper(".letest-new", {
 
 // latest news end
 
+// all-events-slider start
+var swiper = new Swiper(".all-events-slider", {
+  direction: "vertical",
+  slidesPerView: "auto",
+  freeMode: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  mousewheel: true,
+});
+// all-events-slider end
 // history scrolling slider start
 var swiper = new Swiper(".history-scrolling-slider", {
   direction: "vertical",

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Preview</title>
+</head>
+<body>
+    <h2>Upload and Display Image</h2>
+    <form>
+        <!-- Image input field -->
+        <input type="file" id="imageUpload" accept="image/*">
+        <br><br>
+        <!-- Image preview -->
+        <img id="imagePreview" src="" alt="Image Preview" style="max-width: 300px;">
+    </form>
+
+    <script>
+        // Get references to the input field and the image preview element
+        const imageUpload = document.getElementById('imageUpload');
+        const imagePreview = document.getElementById('imagePreview');
+
+        // Add an event listener to the input field
+        imageUpload.addEventListener('change', function(event) {
+            // Check if a file is selected
+            const file = event.target.files[0];
+            if (file) {
+                // Create a FileReader to read the file
+                const reader = new FileReader();
+                
+                // When the file is read, update the image src to show the preview
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                }
+
+                // Read the file as a data URL (base64 encoded string)
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
