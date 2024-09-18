@@ -469,11 +469,12 @@ header .navbar-light .navbar-nav .nav-link {
   padding-bottom: 35px;
   color: white;
   background: rgb(208, 21, 21);
-  background: linear-gradient(
+  background: #98262a;
+  /* background: linear-gradient(
     90deg,
     rgba(208, 21, 21, 1) 0%,
     rgba(0, 62, 31, 1) 72%
-  );
+  ); */
 
   /* Add the transition property for smooth effects */
   transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -481,12 +482,14 @@ header .navbar-light .navbar-nav .nav-link {
 
 /* Hover effect */
 .counter-section .counter-item:hover {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(0, 62, 31, 1) 0%,
     rgba(208, 21, 21, 1) 72%
-  );
+  ); */
+  background-color: #003e1f;
   transform: scale(1.05); /* Slightly scale the item */
+  transition: all 0.3s ease-in-out;
 }
 
 /* .counter-section .counter-item {
@@ -2080,7 +2083,8 @@ header .navbar-light .navbar-nav .nav-link {
 
 .info-form .box8 {
   /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07); */
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), -2px 4px 13px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06),
+    -2px 4px 13px 0px rgba(0, 0, 0, 0.7);
   transition: all 0.15s ease;
   border-radius: 30px;
   overflow: hidden;
