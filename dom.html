@@ -10,40 +10,12 @@
 <body>
 
     <script>
-        const divEle = document.createElement('div');
-        divEle.setAttribute("id", "demo");
-
-        divEle.textContent = 'showkat';
-        divEle.style.backgroundColor = 'lightblue';
-        divEle.style.fontSize = '24px';
-        document.body.appendChild(divEle);
-
+        const divEle = document.createElement("div");
+        divEle.setAttribute('id', 'demo');
+        // divEle.innerText = ''
         console.log(divEle);
-
-
-
-
-
-
-        // Step 1: Create a new div element
-        let newDiv = document.createElement("div");
-
-        // Step 2: Add some content to the div
-        newDiv.textContent = "This is a dynamically created div";
-
-        // Step 3: Set attributes or styles (optional)
-        newDiv.setAttribute("id", "myDiv"); // Setting an ID
-        newDiv.style.backgroundColor = "lightblue"; // Adding a background color
-        newDiv.style.padding = "20px"; // Adding padding
-        newDiv.style.margin = "10px 0"; // Adding margin
-
-        // Step 4: Append the div to an existing element in the DOM (e.g., the body)
-        document.body.appendChild(newDiv);
-
-
-
-
-
+        document.body.appendChild(divEle)
+        document.getElementById('demo').innerHTML = "Showkat Ali";
     </script>
 
 
